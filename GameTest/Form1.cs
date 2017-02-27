@@ -11,6 +11,7 @@ using System.Media;
 using System.Data.Sql;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
+using GameTest.Properties;
 
 namespace GameTest
 {
@@ -409,8 +410,7 @@ namespace GameTest
             axWindowsMediaPlayer2.URL = "1\\kn.mp3";
             if (b1 % 2 == 0)
             {
-                string connectionStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Dmitrii\Documents\Visual Studio 2015\Projects\GameTest\GameTest\GT_DB.mdf';Integrated Security=True";
-                sqlCon = new SqlConnection(connectionStr);
+                sqlCon = new SqlConnection(Settings.Default.ConectDb);
                 sqlCon.Open();
                 SqlDataReader sqlRe1 = null;
                 SqlCommand command1 = new SqlCommand("SELECT * FROM [GTK1]", sqlCon);
@@ -663,8 +663,7 @@ namespace GameTest
         private void button11_Click(object sender, EventArgs e)
         {
             vop = 1;
-            string connectionStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Dmitrii\Documents\Visual Studio 2015\Projects\GameTest\GameTest\GT_DB.mdf';Integrated Security=True";
-            sqlCon = new SqlConnection(connectionStr);
+            sqlCon = new SqlConnection(Settings.Default.ConectDb);
             sqlCon.Open();
             SqlDataReader sqlRe = null;
             SqlCommand command = new SqlCommand("SELECT * FROM [GTV1] WHERE id=" + vop, sqlCon);
@@ -703,22 +702,14 @@ namespace GameTest
                     progressBar1.Value += 1;
                 else
                 {
-                    string connectionStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Dmitrii\Documents\Visual Studio 2015\Projects\GameTest\GameTest\GT_DB.mdf';Integrated Security=True";
-                    sqlCon = new SqlConnection(connectionStr);
+                    sqlCon = new SqlConnection(Settings.Default.ConectDb);
                     sqlCon.Open();
                     SqlDataReader sqlRe = null;
                     SqlCommand command = new SqlCommand("SELECT * FROM [GTV1] WHERE id=" + vop, sqlCon);
-                    try
-                    {
                         sqlRe = command.ExecuteReader();
                         sqlRe.Read();
                         label16.Text = Convert.ToString(sqlRe["otvet"]);
-                    }
-                    finally
-                    {
-
-                    }
-                axWindowsMediaPlayer2.URL = "1\\kn.mp3";
+                   axWindowsMediaPlayer2.URL = "1\\kn.mp3";
                 timer4.Stop();
                 timer5.Start();
                 progressBar1.Value = 0;
@@ -737,21 +728,13 @@ namespace GameTest
         private void button12_Click(object sender, EventArgs e)
         {
             vop = 2;
-            string connectionStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Dmitrii\Documents\Visual Studio 2015\Projects\GameTest\GameTest\GT_DB.mdf';Integrated Security=True";
-            sqlCon = new SqlConnection(connectionStr);
+            sqlCon = new SqlConnection(Settings.Default.ConectDb);
             sqlCon.Open();
             SqlDataReader sqlRe = null;
             SqlCommand command = new SqlCommand("SELECT * FROM [GTV1] WHERE id=" + vop, sqlCon);
-            try
-            {
                 sqlRe = command.ExecuteReader();
                 sqlRe.Read();
                 label16.Text = Convert.ToString(sqlRe["tekst"]);
-            }
-            finally
-            {
-
-            }
             tableLayoutPanel8.Visible = false;
             tableLayoutPanel9.Visible = true;
             timer4.Start();
@@ -763,21 +746,14 @@ namespace GameTest
         private void button13_Click(object sender, EventArgs e)
         {
             vop = 3;
-            string connectionStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Dmitrii\Documents\Visual Studio 2015\Projects\GameTest\GameTest\GT_DB.mdf';Integrated Security=True";
+            string connectionStr = Settings.Default.ConectDb;
             sqlCon = new SqlConnection(connectionStr);
             sqlCon.Open();
             SqlDataReader sqlRe = null;
             SqlCommand command = new SqlCommand("SELECT * FROM [GTV1] WHERE id=" + vop, sqlCon);
-            try
-            {
                 sqlRe = command.ExecuteReader();
                 sqlRe.Read();
                 label16.Text = Convert.ToString(sqlRe["tekst"]);
-            }
-            finally
-            {
-
-            }
             tableLayoutPanel8.Visible = false;
             tableLayoutPanel9.Visible = true;
             timer4.Start();
@@ -789,21 +765,13 @@ namespace GameTest
         private void button14_Click(object sender, EventArgs e)
         {
             vop = 4;
-            string connectionStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Dmitrii\Documents\Visual Studio 2015\Projects\GameTest\GameTest\GT_DB.mdf';Integrated Security=True";
-            sqlCon = new SqlConnection(connectionStr);
+            sqlCon = new SqlConnection(Settings.Default.ConectDb);
             sqlCon.Open();
             SqlDataReader sqlRe = null;
             SqlCommand command = new SqlCommand("SELECT * FROM [GTV1] WHERE id=" + vop, sqlCon);
-            try
-            {
                 sqlRe = command.ExecuteReader();
                 sqlRe.Read();
                 label16.Text = Convert.ToString(sqlRe["tekst"]);
-            }
-            finally
-            {
-
-            }
             tableLayoutPanel8.Visible = false;
             tableLayoutPanel9.Visible = true;
             timer4.Start();
@@ -814,21 +782,13 @@ namespace GameTest
         private void button15_Click(object sender, EventArgs e)
         {
             vop = 5;
-            string connectionStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Dmitrii\Documents\Visual Studio 2015\Projects\GameTest\GameTest\GT_DB.mdf';Integrated Security=True";
-            sqlCon = new SqlConnection(connectionStr);
+            sqlCon = new SqlConnection(Settings.Default.ConectDb);
             sqlCon.Open();
             SqlDataReader sqlRe = null;
             SqlCommand command = new SqlCommand("SELECT * FROM [GTV1] WHERE id=" + vop, sqlCon);
-            try
-            {
                 sqlRe = command.ExecuteReader();
                 sqlRe.Read();
                 label16.Text = Convert.ToString(sqlRe["tekst"]);
-            }
-            finally
-            {
-
-            }
             tableLayoutPanel8.Visible = false;
             tableLayoutPanel9.Visible = true;
             timer4.Start();
@@ -836,6 +796,31 @@ namespace GameTest
             progressBar1.Visible = true;
         }
 
-        
+
+        // Max erotic
+
+
+       static public bool Tru = true;
+        private void tableLayoutPanel9_Click(object sender, EventArgs e)
+        {
+            int resultTime = progressBar1.Value;
+            if (Tru)
+            {
+                timer4.Stop();
+                Tru = false;
+
+            }
+            else
+            {
+                timer4.Start();
+                Tru = true;
+            }
+            
+        }
+
+        ////////////////////////////////////////////////
+
+
+
     }
 }
