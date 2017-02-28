@@ -12,7 +12,7 @@ using System.Data.Sql;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
 using GameTest.Properties;
-
+using GameTest.DB_model;
 namespace GameTest
 {
     
@@ -218,6 +218,7 @@ namespace GameTest
                 pictureBox1.Enabled = true;
             }
             t++;
+           
             
         }
 
@@ -310,8 +311,7 @@ namespace GameTest
         SqlConnection sqlCon;
         private void Form1_Load(object sender, EventArgs e)
         {
-            string connectionStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Dmitrii\Documents\Visual Studio 2015\Projects\GameTest\GameTest\GT_DB.mdf';Integrated Security=True";
-            sqlCon = new SqlConnection(connectionStr);
+            sqlCon = new SqlConnection(Settings.Default.ConectDb);
             sqlCon.Open();
             SqlDataReader sqlRe = null;
             SqlCommand command = new SqlCommand("SELECT * FROM [GTK1] WHERE id_kat=1", sqlCon);
@@ -667,16 +667,9 @@ namespace GameTest
             sqlCon.Open();
             SqlDataReader sqlRe = null;
             SqlCommand command = new SqlCommand("SELECT * FROM [GTV1] WHERE id=" + vop, sqlCon);
-            try
-            {
                 sqlRe = command.ExecuteReader();
                 sqlRe.Read();
                 label16.Text = Convert.ToString(sqlRe["tekst"]);
-            }
-            finally
-            {
-
-            }
             tableLayoutPanel8.Visible = false;
             tableLayoutPanel9.Visible = true;
             timer4.Start();
@@ -685,31 +678,27 @@ namespace GameTest
             
 
         }
-       
-
+        
         private void timer4_Tick(object sender, EventArgs e)
         {
-           /* if (e.KeyCode == Keys.NumPad0)
-            {
-                timer4.Stop();
-                progressBar1.Value = 0;
-            }
-            if (e.KeyCode == Keys.NumPad1)
-            {
-                timer4.Start();
-            }*/
             if (progressBar1.Value < 150)
                     progressBar1.Value += 1;
                 else
                 {
-                    sqlCon = new SqlConnection(Settings.Default.ConectDb);
+                
+                   /* sqlCon = new SqlConnection(Settings.Default.ConectDb);
                     sqlCon.Open();
                     SqlDataReader sqlRe = null;
                     SqlCommand command = new SqlCommand("SELECT * FROM [GTV1] WHERE id=" + vop, sqlCon);
                         sqlRe = command.ExecuteReader();
                         sqlRe.Read();
-                        label16.Text = Convert.ToString(sqlRe["otvet"]);
-                   axWindowsMediaPlayer2.URL = "1\\kn.mp3";
+                        label16.Text = Convert.ToString(sqlRe["otvet"]);*/
+                label16.Text = Context.Otv(vop);
+
+
+
+
+                axWindowsMediaPlayer2.URL = "1\\kn.mp3";
                 timer4.Stop();
                 timer5.Start();
                 progressBar1.Value = 0;
@@ -728,13 +717,15 @@ namespace GameTest
         private void button12_Click(object sender, EventArgs e)
         {
             vop = 2;
-            sqlCon = new SqlConnection(Settings.Default.ConectDb);
+            /*sqlCon = new SqlConnection(Settings.Default.ConectDb);
             sqlCon.Open();
             SqlDataReader sqlRe = null;
             SqlCommand command = new SqlCommand("SELECT * FROM [GTV1] WHERE id=" + vop, sqlCon);
                 sqlRe = command.ExecuteReader();
-                sqlRe.Read();
-                label16.Text = Convert.ToString(sqlRe["tekst"]);
+                sqlRe.Read();*/
+            label16.Text = Context.Vops(vop);
+
+
             tableLayoutPanel8.Visible = false;
             tableLayoutPanel9.Visible = true;
             timer4.Start();
@@ -797,7 +788,7 @@ namespace GameTest
         }
 
 
-        // Max erotic
+        // Max.porn
 
 
        static public bool Tru = true;
@@ -817,6 +808,7 @@ namespace GameTest
             }
             
         }
+        
 
         ////////////////////////////////////////////////
 

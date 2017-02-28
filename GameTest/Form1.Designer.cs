@@ -255,7 +255,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.267716F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 91.73228F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 285F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 286F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Controls.Add(this.checkBox1, 1, 1);
@@ -322,7 +322,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(205, 0);
+            this.label7.Location = new System.Drawing.Point(204, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(128, 25);
             this.label7.TabIndex = 4;
@@ -336,7 +336,7 @@
             this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.checkBox2.ForeColor = System.Drawing.Color.White;
-            this.checkBox2.Location = new System.Drawing.Point(339, 45);
+            this.checkBox2.Location = new System.Drawing.Point(338, 45);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(88, 25);
             this.checkBox2.TabIndex = 2;
@@ -352,7 +352,7 @@
             this.checkBox3.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.checkBox3.ForeColor = System.Drawing.Color.White;
-            this.checkBox3.Location = new System.Drawing.Point(339, 85);
+            this.checkBox3.Location = new System.Drawing.Point(338, 85);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(73, 25);
             this.checkBox3.TabIndex = 3;
@@ -364,7 +364,7 @@
             // 
             this.trackBar1.AutoSize = false;
             this.trackBar1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.trackBar1.Location = new System.Drawing.Point(339, 126);
+            this.trackBar1.Location = new System.Drawing.Point(338, 126);
             this.trackBar1.Margin = new System.Windows.Forms.Padding(3, 7, 10, 10);
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1352,7 +1352,7 @@
             this.tableLayoutPanel9.ColumnCount = 3;
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.240059F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 96.75994F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27F));
             this.tableLayoutPanel9.Controls.Add(this.label16, 1, 1);
             this.tableLayoutPanel9.Location = new System.Drawing.Point(670, 460);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
@@ -1377,7 +1377,7 @@
             this.label16.Location = new System.Drawing.Point(81, 41);
             this.label16.Margin = new System.Windows.Forms.Padding(60, 20, 50, 60);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(542, 274);
+            this.label16.Size = new System.Drawing.Size(541, 274);
             this.label16.TabIndex = 0;
             this.label16.Text = "text";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
