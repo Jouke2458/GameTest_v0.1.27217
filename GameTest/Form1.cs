@@ -41,7 +41,6 @@ namespace GameTest
                     button2.Visible = false;
                     button3.Visible = false;
                     button4.Visible = false;
-
                     tableLayoutPanel1.Visible = true;
 
                 }
@@ -52,16 +51,9 @@ namespace GameTest
                     button2.Visible = true;
                     button3.Visible = true;
                     button4.Visible = true;
-
                     tableLayoutPanel1.Visible = false;
                 }
-                i++;                       
-   
-        }
-
-        private void Form1_TextChanged(object sender, EventArgs e)
-        {
-
+                i++;      
         }
 
         private void comboBox1_TextChanged(object sender, EventArgs e)
@@ -102,7 +94,10 @@ namespace GameTest
                      button2.Location = new Point(300, button2.Location.Y);
                      button3.Location = new Point(300, button3.Location.Y);
                      button4.Location = new Point(300, button4.Location.Y);
-                 }
+                    tableLayoutPanel1.Location = new Point(250, 100);
+                    flowLayoutPanel1.Location = new Point(flowLayoutPanel1.Location.X + 100, 70);
+                    
+                }
                  /*else
                  {
                      button1.Location = new Point(300, button1.Location.Y);
@@ -315,17 +310,9 @@ namespace GameTest
             sqlCon.Open();
             SqlDataReader sqlRe = null;
             SqlCommand command = new SqlCommand("SELECT * FROM [GTK1] WHERE id_kat=1", sqlCon);
-            try
-            {
                 sqlRe = command.ExecuteReader();
                 sqlRe.Read();
                 label1.Text = Convert.ToString(sqlRe["nazvanie"]) + "\n" + "Cоздание:" + Convert.ToString(sqlRe["datas"]) + "\n" + "Изменение:" + Convert.ToString(sqlRe["datar"]); 
-            }
-            finally
-            {
-
-            }
-            
             
             timer1.Stop();
             timer2.Stop();
@@ -333,12 +320,11 @@ namespace GameTest
             axWindowsMediaPlayer2.settings.volume = 10;
             pictureBox3.Enabled = false;
             Random m1 = new Random();
-            int m = m1.Next(1, 4);
-
+            int m = m1.Next(1, 5);
             switch (m)
             {
                 case 1:
-                    axWindowsMediaPlayer1.URL = "1\\1.wav";
+                    axWindowsMediaPlayer1.URL = "1\\1.mp3";
                     axWindowsMediaPlayer1.settings.volume = trackBar1.Value;
                     break;
                 case 2:
@@ -349,20 +335,23 @@ namespace GameTest
                     axWindowsMediaPlayer1.URL = "1\\3.mp3";
                     axWindowsMediaPlayer1.settings.volume = trackBar1.Value;
                     break;
+                case 4:
+                    axWindowsMediaPlayer1.URL = "1\\4.mp3";
+                    axWindowsMediaPlayer1.settings.volume = trackBar1.Value;
+                    break;
                 default:
-                    axWindowsMediaPlayer1.URL = "1\\1.wav";
+                    axWindowsMediaPlayer1.URL = "1\\1.mp3";
                     axWindowsMediaPlayer1.settings.volume = trackBar1.Value;
                     break;
             }
-            label9.Location = new Point(300, 200);
-            tableLayoutPanel8.Location = new Point(30, 50);
-            flowLayoutPanel1.Location = new Point(550, 50);
-            tableLayoutPanel1.Location = new Point(100, 50);
-            label14.Location = new Point(190, 50);
-            label15.Location = new Point(220, 130);
-            tableLayoutPanel9.Location = new Point(70, 70);
+            label9.Location = new Point(400, 200);
+            tableLayoutPanel8.Location = new Point(150, 80);
+            flowLayoutPanel1.Location = new Point(750, 70);
+            tableLayoutPanel1.Location = new Point(120, 100);
+            label14.Location = new Point(290, 50);
+            label15.Location = new Point(320, 130);
+            tableLayoutPanel9.Location = new Point(150, 80);
             axWindowsMediaPlayer2.settings.volume = trackBar1.Value - 3;
-            
             Size = new Size(800, 600);
         }
 
@@ -376,7 +365,6 @@ namespace GameTest
             {
                 axWindowsMediaPlayer2.URL = "1\\kn.mp3";
                 axWindowsMediaPlayer1.settings.volume = trackBar1.Value;
-
             }
         }
 
@@ -414,38 +402,31 @@ namespace GameTest
                 sqlCon.Open();
                 SqlDataReader sqlRe1 = null;
                 SqlCommand command1 = new SqlCommand("SELECT * FROM [GTK1]", sqlCon);
-                    try
-                    {
                         sqlRe1 = command1.ExecuteReader();
                         sqlRe1.Read();
                     label15.Text = label15.Text + Convert.ToString(sqlRe1["name_kat"]) + "\n";
                     label8.Text = Convert.ToString(sqlRe1["name_kat"]);
-                    for (int x = 1; x < 5; x++)
+                for (int x = 1; x < 5; x++)
+                {
+                    command1 = new SqlCommand("SELECT * FROM [GTK1] WHERE id_kat=" + x, sqlCon);
+                    sqlRe1.Read();
+                    label15.Text = label15.Text + Convert.ToString(sqlRe1["name_kat"]) + "\n";
+                    switch (x)
                     {
-                        command1 = new SqlCommand("SELECT * FROM [GTK1] WHERE id_kat=" + x, sqlCon);
-                        sqlRe1.Read();
-                        label15.Text = label15.Text + Convert.ToString(sqlRe1["name_kat"]) + "\n";
-                        switch (x) {
-                            case 1:
-                                label10.Text = Convert.ToString(sqlRe1["name_kat"]);
-                                break;
-                            case 2:
-                                label11.Text = Convert.ToString(sqlRe1["name_kat"]);
-                                break;
-                            case 3:
-                                label12.Text = Convert.ToString(sqlRe1["name_kat"]);
-                                break;
-                            case 4:
-                                label13.Text = Convert.ToString(sqlRe1["name_kat"]);
-                                break;
-                                 } 
+                        case 1:
+                            label10.Text = Convert.ToString(sqlRe1["name_kat"]);
+                            break;
+                        case 2:
+                            label11.Text = Convert.ToString(sqlRe1["name_kat"]);
+                            break;
+                        case 3:
+                            label12.Text = Convert.ToString(sqlRe1["name_kat"]);
+                            break;
+                        case 4:
+                            label13.Text = Convert.ToString(sqlRe1["name_kat"]);
+                            break;
                     }
-                    }
-                    finally
-                    {
-
-                    }
-              
+                }
                 flowLayoutPanel1.Visible = false;
                 button1.Visible = false;
                 button2.Visible = false;
@@ -476,7 +457,6 @@ namespace GameTest
             button4.Location = new Point(button4.Location.X + 250, button4.Location.Y);
             flowLayoutPanel1.Location = new Point(flowLayoutPanel1.Location.X + 150, flowLayoutPanel1.Location.Y);
             axWindowsMediaPlayer2.URL = "1\\kn.mp3";
-
             flowLayoutPanel1.Visible = false;
             t=1;
             b1 = 1;
@@ -496,7 +476,6 @@ namespace GameTest
             button4.Location = new Point(button4.Location.X + 250, button4.Location.Y);
             flowLayoutPanel1.Location = new Point(flowLayoutPanel1.Location.X + 150, flowLayoutPanel1.Location.Y);
             axWindowsMediaPlayer2.URL = "1\\kn.mp3";
-
             flowLayoutPanel1.Visible = false;
             t = 1;
             b1 = 1;
@@ -516,7 +495,6 @@ namespace GameTest
             button4.Location = new Point(button4.Location.X + 250, button4.Location.Y);
             flowLayoutPanel1.Location = new Point(flowLayoutPanel1.Location.X + 150, flowLayoutPanel1.Location.Y);
             axWindowsMediaPlayer2.URL = "1\\kn.mp3";
-
             flowLayoutPanel1.Visible = false;
             t = 1;
             b1 = 1;
@@ -536,7 +514,6 @@ namespace GameTest
             button4.Location = new Point(button4.Location.X + 250, button4.Location.Y);
             flowLayoutPanel1.Location = new Point(flowLayoutPanel1.Location.X + 150, flowLayoutPanel1.Location.Y);
             axWindowsMediaPlayer2.URL = "1\\kn.mp3";
-
             flowLayoutPanel1.Visible = false;
             t = 1;
             b1 = 1;
@@ -556,7 +533,6 @@ namespace GameTest
             button4.Location = new Point(button4.Location.X + 250, button4.Location.Y);
             flowLayoutPanel1.Location = new Point(flowLayoutPanel1.Location.X + 150, flowLayoutPanel1.Location.Y);
             axWindowsMediaPlayer2.URL = "1\\kn.mp3";
-
             flowLayoutPanel1.Visible = false;
             t = 1;
             b1 = 1;
@@ -569,7 +545,6 @@ namespace GameTest
             label15.Visible = true;
             timer2.Start();
             timer1.Stop();
-            
         }
 
         private void timer2_Tick(object sender, EventArgs e)
@@ -606,7 +581,6 @@ namespace GameTest
             button3.Visible = true;
             button4.Visible = true;
             tableLayoutPanel8.Visible = false;
-            
             pictureBox1.Enabled = true;
             pictureBox3.Enabled = false;
             t++;
@@ -617,18 +591,20 @@ namespace GameTest
             button13.Visible = true;
             button14.Visible = true;
             button15.Visible = true;
-
+            tableLayoutPanel9.Visible = false;
+            progressBar1.Visible = false;
+            timer4.Stop();
+            timer5.Stop();
         }
 
         private void timer3_Tick(object sender, EventArgs e)
         {
             Random m1 = new Random();
-            int m = m1.Next(1, 4);
-
+            int m = m1.Next(1, 5);
             switch (m)
             {
                 case 1:
-                    axWindowsMediaPlayer1.URL = "1\\1.wav";
+                    axWindowsMediaPlayer1.URL = "1\\1.mp3";
                     axWindowsMediaPlayer1.settings.volume = trackBar1.Value;
                     break;
                 case 2:
@@ -639,8 +615,12 @@ namespace GameTest
                     axWindowsMediaPlayer1.URL = "1\\3.mp3";
                     axWindowsMediaPlayer1.settings.volume = trackBar1.Value;
                     break;
+                case 4:
+                    axWindowsMediaPlayer1.URL = "1\\4.mp3";
+                    axWindowsMediaPlayer1.settings.volume = trackBar1.Value;
+                    break;
                 default:
-                    axWindowsMediaPlayer1.URL = "1\\1.wav";
+                    axWindowsMediaPlayer1.URL = "1\\1.mp3";
                     axWindowsMediaPlayer1.settings.volume = trackBar1.Value;
                     break;
             }
@@ -663,48 +643,27 @@ namespace GameTest
         private void button11_Click(object sender, EventArgs e)
         {
             vop = 1;
-            sqlCon = new SqlConnection(Settings.Default.ConectDb);
-            sqlCon.Open();
-            SqlDataReader sqlRe = null;
-            SqlCommand command = new SqlCommand("SELECT * FROM [GTV1] WHERE id=" + vop, sqlCon);
-                sqlRe = command.ExecuteReader();
-                sqlRe.Read();
-                label16.Text = Convert.ToString(sqlRe["tekst"]);
+            label16.Text = Context.Vops(vop);
             tableLayoutPanel8.Visible = false;
             tableLayoutPanel9.Visible = true;
             timer4.Start();
             button11.Visible = false;
             progressBar1.Visible = true;
-            
-
         }
         
         private void timer4_Tick(object sender, EventArgs e)
         {
-            if (progressBar1.Value < 150)
+            if (progressBar1.Value < progressBar1.Maximum)
                     progressBar1.Value += 1;
                 else
                 {
-                
-                   /* sqlCon = new SqlConnection(Settings.Default.ConectDb);
-                    sqlCon.Open();
-                    SqlDataReader sqlRe = null;
-                    SqlCommand command = new SqlCommand("SELECT * FROM [GTV1] WHERE id=" + vop, sqlCon);
-                        sqlRe = command.ExecuteReader();
-                        sqlRe.Read();
-                        label16.Text = Convert.ToString(sqlRe["otvet"]);*/
                 label16.Text = Context.Otv(vop);
-
-
-
-
                 axWindowsMediaPlayer2.URL = "1\\kn.mp3";
                 timer4.Stop();
                 timer5.Start();
                 progressBar1.Value = 0;
                 progressBar1.Visible = false;
                 }
-            
         }
 
         private void timer5_Tick(object sender, EventArgs e)
@@ -717,52 +676,29 @@ namespace GameTest
         private void button12_Click(object sender, EventArgs e)
         {
             vop = 2;
-            /*sqlCon = new SqlConnection(Settings.Default.ConectDb);
-            sqlCon.Open();
-            SqlDataReader sqlRe = null;
-            SqlCommand command = new SqlCommand("SELECT * FROM [GTV1] WHERE id=" + vop, sqlCon);
-                sqlRe = command.ExecuteReader();
-                sqlRe.Read();*/
             label16.Text = Context.Vops(vop);
-
-
             tableLayoutPanel8.Visible = false;
             tableLayoutPanel9.Visible = true;
             timer4.Start();
             button12.Visible = false;
             progressBar1.Visible = true;
-
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
             vop = 3;
-            string connectionStr = Settings.Default.ConectDb;
-            sqlCon = new SqlConnection(connectionStr);
-            sqlCon.Open();
-            SqlDataReader sqlRe = null;
-            SqlCommand command = new SqlCommand("SELECT * FROM [GTV1] WHERE id=" + vop, sqlCon);
-                sqlRe = command.ExecuteReader();
-                sqlRe.Read();
-                label16.Text = Convert.ToString(sqlRe["tekst"]);
+            label16.Text = Context.Vops(vop);
             tableLayoutPanel8.Visible = false;
             tableLayoutPanel9.Visible = true;
             timer4.Start();
             button13.Visible = false;
             progressBar1.Visible = true;
-            
         }
 
         private void button14_Click(object sender, EventArgs e)
         {
             vop = 4;
-            sqlCon = new SqlConnection(Settings.Default.ConectDb);
-            sqlCon.Open();
-            SqlDataReader sqlRe = null;
-            SqlCommand command = new SqlCommand("SELECT * FROM [GTV1] WHERE id=" + vop, sqlCon);
-                sqlRe = command.ExecuteReader();
-                sqlRe.Read();
-                label16.Text = Convert.ToString(sqlRe["tekst"]);
+            label16.Text = Context.Vops(vop);
             tableLayoutPanel8.Visible = false;
             tableLayoutPanel9.Visible = true;
             timer4.Start();
@@ -773,23 +709,15 @@ namespace GameTest
         private void button15_Click(object sender, EventArgs e)
         {
             vop = 5;
-            sqlCon = new SqlConnection(Settings.Default.ConectDb);
-            sqlCon.Open();
-            SqlDataReader sqlRe = null;
-            SqlCommand command = new SqlCommand("SELECT * FROM [GTV1] WHERE id=" + vop, sqlCon);
-                sqlRe = command.ExecuteReader();
-                sqlRe.Read();
-                label16.Text = Convert.ToString(sqlRe["tekst"]);
+            label16.Text = Context.Vops(vop);
             tableLayoutPanel8.Visible = false;
             tableLayoutPanel9.Visible = true;
             timer4.Start();
             button15.Visible = false;
             progressBar1.Visible = true;
         }
-
-
+        
         // Max.porn
-
 
        static public bool Tru = true;
         private void tableLayoutPanel9_Click(object sender, EventArgs e)
@@ -799,20 +727,15 @@ namespace GameTest
             {
                 timer4.Stop();
                 Tru = false;
-
             }
             else
             {
                 timer4.Start();
                 Tru = true;
             }
-            
         }
         
 
         ////////////////////////////////////////////////
-
-
-
     }
 }

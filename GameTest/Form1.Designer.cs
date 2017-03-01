@@ -143,7 +143,7 @@
             this.button1.MinimumSize = new System.Drawing.Size(250, 60);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button1.Size = new System.Drawing.Size(250, 60);
+            this.button1.Size = new System.Drawing.Size(474, 60);
             this.button1.TabIndex = 0;
             this.button1.Text = "Тест";
             this.button1.UseVisualStyleBackColor = false;
@@ -157,7 +157,7 @@
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::GameTest.Properties.Resources._111;
             this.pictureBox2.InitialImage = global::GameTest.Properties.Resources._111;
-            this.pictureBox2.Location = new System.Drawing.Point(725, 510);
+            this.pictureBox2.Location = new System.Drawing.Point(949, 678);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(42, 42);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -174,7 +174,7 @@
             this.pictureBox1.Image = global::GameTest.Properties.Resources._222;
             this.pictureBox1.ImageLocation = "";
             this.pictureBox1.InitialImage = global::GameTest.Properties.Resources._222;
-            this.pictureBox1.Location = new System.Drawing.Point(670, 510);
+            this.pictureBox1.Location = new System.Drawing.Point(894, 678);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(40, 40);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -197,7 +197,7 @@
             this.button2.MaximumSize = new System.Drawing.Size(500, 0);
             this.button2.MinimumSize = new System.Drawing.Size(250, 60);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(250, 60);
+            this.button2.Size = new System.Drawing.Size(474, 60);
             this.button2.TabIndex = 6;
             this.button2.Text = "Викторина";
             this.button2.UseVisualStyleBackColor = false;
@@ -218,7 +218,7 @@
             this.button3.MaximumSize = new System.Drawing.Size(500, 0);
             this.button3.MinimumSize = new System.Drawing.Size(250, 60);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(250, 60);
+            this.button3.Size = new System.Drawing.Size(474, 60);
             this.button3.TabIndex = 7;
             this.button3.Text = "Создать";
             this.button3.UseVisualStyleBackColor = false;
@@ -239,7 +239,7 @@
             this.button4.MaximumSize = new System.Drawing.Size(500, 0);
             this.button4.MinimumSize = new System.Drawing.Size(250, 60);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(250, 60);
+            this.button4.Size = new System.Drawing.Size(474, 60);
             this.button4.TabIndex = 8;
             this.button4.Text = "Изменить";
             this.button4.UseVisualStyleBackColor = false;
@@ -247,7 +247,8 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.tableLayoutPanel1.BackgroundImage = global::GameTest.Properties.Resources.kn;
@@ -255,7 +256,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.267716F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 91.73228F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 286F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 288F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Controls.Add(this.checkBox1, 1, 1);
@@ -264,9 +265,9 @@
             this.tableLayoutPanel1.Controls.Add(this.checkBox2, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.checkBox3, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.trackBar1, 2, 3);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(734, 12);
-            this.tableLayoutPanel1.MaximumSize = new System.Drawing.Size(800, 600);
-            this.tableLayoutPanel1.MinimumSize = new System.Drawing.Size(600, 200);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(821, 12);
+            this.tableLayoutPanel1.MaximumSize = new System.Drawing.Size(800, 422);
+            this.tableLayoutPanel1.MinimumSize = new System.Drawing.Size(800, 422);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.21951F));
@@ -274,7 +275,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 246F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(622, 422);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 422);
             this.tableLayoutPanel1.TabIndex = 9;
             this.tableLayoutPanel1.Visible = false;
             // 
@@ -287,7 +288,7 @@
             this.checkBox1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.checkBox1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.checkBox1.ForeColor = System.Drawing.Color.White;
-            this.checkBox1.Location = new System.Drawing.Point(30, 45);
+            this.checkBox1.Location = new System.Drawing.Point(45, 45);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(141, 25);
             this.checkBox1.TabIndex = 1;
@@ -307,7 +308,7 @@
             "1024x768",
             "1280x720",
             "1280x1024"});
-            this.comboBox1.Location = new System.Drawing.Point(30, 85);
+            this.comboBox1.Location = new System.Drawing.Point(45, 85);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(150, 28);
             this.comboBox1.TabIndex = 0;
@@ -322,7 +323,8 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(204, 0);
+            this.label7.Location = new System.Drawing.Point(363, 0);
+            this.label7.Margin = new System.Windows.Forms.Padding(3, 0, 20, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(128, 25);
             this.label7.TabIndex = 4;
@@ -336,7 +338,7 @@
             this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.checkBox2.ForeColor = System.Drawing.Color.White;
-            this.checkBox2.Location = new System.Drawing.Point(338, 45);
+            this.checkBox2.Location = new System.Drawing.Point(514, 45);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(88, 25);
             this.checkBox2.TabIndex = 2;
@@ -352,7 +354,7 @@
             this.checkBox3.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.checkBox3.ForeColor = System.Drawing.Color.White;
-            this.checkBox3.Location = new System.Drawing.Point(338, 85);
+            this.checkBox3.Location = new System.Drawing.Point(514, 85);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(73, 25);
             this.checkBox3.TabIndex = 3;
@@ -364,7 +366,7 @@
             // 
             this.trackBar1.AutoSize = false;
             this.trackBar1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.trackBar1.Location = new System.Drawing.Point(338, 126);
+            this.trackBar1.Location = new System.Drawing.Point(514, 126);
             this.trackBar1.Margin = new System.Windows.Forms.Padding(3, 7, 10, 10);
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -385,9 +387,11 @@
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel5);
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel6);
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel7);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(724, 118);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(863, 216);
+            this.flowLayoutPanel1.MaximumSize = new System.Drawing.Size(355, 415);
+            this.flowLayoutPanel1.MinimumSize = new System.Drawing.Size(355, 415);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(354, 416);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(355, 415);
             this.flowLayoutPanel1.TabIndex = 10;
             this.flowLayoutPanel1.Visible = false;
             // 
@@ -683,6 +687,9 @@
             // 
             // tableLayoutPanel8
             // 
+            this.tableLayoutPanel8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel8.BackgroundImage = global::GameTest.Properties.Resources.kn;
             this.tableLayoutPanel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tableLayoutPanel8.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
@@ -723,7 +730,9 @@
             this.tableLayoutPanel8.Controls.Add(this.button32, 2, 4);
             this.tableLayoutPanel8.Controls.Add(this.label13, 0, 4);
             this.tableLayoutPanel8.Controls.Add(this.label12, 0, 3);
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(12, 501);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(93, 618);
+            this.tableLayoutPanel8.MaximumSize = new System.Drawing.Size(740, 390);
+            this.tableLayoutPanel8.MinimumSize = new System.Drawing.Size(740, 390);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 5;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -1258,12 +1267,17 @@
             // 
             // label9
             // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(-75, 515);
             this.label9.Margin = new System.Windows.Forms.Padding(15, 10, 10, 13);
+            this.label9.MaximumSize = new System.Drawing.Size(276, 73);
+            this.label9.MinimumSize = new System.Drawing.Size(276, 73);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(276, 73);
             this.label9.TabIndex = 14;
@@ -1272,12 +1286,17 @@
             // 
             // label14
             // 
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label14.ForeColor = System.Drawing.Color.White;
             this.label14.Location = new System.Drawing.Point(-392, 45);
             this.label14.Margin = new System.Windows.Forms.Padding(15, 10, 10, 13);
+            this.label14.MaximumSize = new System.Drawing.Size(459, 73);
+            this.label14.MinimumSize = new System.Drawing.Size(459, 73);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(459, 73);
             this.label14.TabIndex = 15;
@@ -1286,6 +1305,9 @@
             // 
             // label15
             // 
+            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 42F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -1313,7 +1335,7 @@
             this.pictureBox3.Image = global::GameTest.Properties.Resources._222;
             this.pictureBox3.ImageLocation = "";
             this.pictureBox3.InitialImage = global::GameTest.Properties.Resources._222;
-            this.pictureBox3.Location = new System.Drawing.Point(670, 510);
+            this.pictureBox3.Location = new System.Drawing.Point(894, 678);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(40, 40);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1328,10 +1350,10 @@
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Image = global::GameTest.Properties.Resources._444;
+            this.pictureBox4.Image = global::GameTest.Properties.Resources._333;
             this.pictureBox4.ImageLocation = "";
-            this.pictureBox4.InitialImage = global::GameTest.Properties.Resources._444;
-            this.pictureBox4.Location = new System.Drawing.Point(615, 510);
+            this.pictureBox4.InitialImage = global::GameTest.Properties.Resources._333;
+            this.pictureBox4.Location = new System.Drawing.Point(839, 678);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(40, 40);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1347,20 +1369,25 @@
             // 
             // tableLayoutPanel9
             // 
+            this.tableLayoutPanel9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel9.BackgroundImage = global::GameTest.Properties.Resources.kn;
             this.tableLayoutPanel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tableLayoutPanel9.ColumnCount = 3;
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.240059F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 96.75994F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 29F));
             this.tableLayoutPanel9.Controls.Add(this.label16, 1, 1);
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(670, 460);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(927, 508);
+            this.tableLayoutPanel9.MaximumSize = new System.Drawing.Size(740, 390);
+            this.tableLayoutPanel9.MinimumSize = new System.Drawing.Size(740, 390);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 3;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.804749F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 94.19525F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(700, 400);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(740, 390);
             this.tableLayoutPanel9.TabIndex = 19;
             this.tableLayoutPanel9.Visible = false;
             this.tableLayoutPanel9.Click += new System.EventHandler(this.tableLayoutPanel9_Click);
@@ -1374,10 +1401,10 @@
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(81, 41);
+            this.label16.Location = new System.Drawing.Point(83, 41);
             this.label16.Margin = new System.Windows.Forms.Padding(60, 20, 50, 60);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(541, 274);
+            this.label16.Size = new System.Drawing.Size(577, 264);
             this.label16.TabIndex = 0;
             this.label16.Text = "text";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1397,10 +1424,12 @@
             this.progressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.progressBar1.ForeColor = System.Drawing.Color.White;
-            this.progressBar1.Location = new System.Drawing.Point(314, 10);
+            this.progressBar1.Location = new System.Drawing.Point(326, 10);
             this.progressBar1.Maximum = 150;
+            this.progressBar1.MaximumSize = new System.Drawing.Size(400, 20);
+            this.progressBar1.MinimumSize = new System.Drawing.Size(400, 20);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(220, 20);
+            this.progressBar1.Size = new System.Drawing.Size(400, 20);
             this.progressBar1.Step = 1;
             this.progressBar1.TabIndex = 20;
             this.progressBar1.Visible = false;
@@ -1411,8 +1440,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = global::GameTest.Properties.Resources.ph;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(784, 562);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(1008, 730);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.pictureBox4);
@@ -1434,13 +1463,12 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(700, 500);
+            this.MinimumSize = new System.Drawing.Size(1024, 768);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Игра-викторина";
             this.TransparencyKey = System.Drawing.Color.LightSteelBlue;
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.TextChanged += new System.EventHandler(this.Form1_TextChanged);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
