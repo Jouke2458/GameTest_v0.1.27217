@@ -52,6 +52,7 @@ namespace GameTest.DB_model
             }
             return DBv1;
         }
+        
         public static string Vops(int vop, int tn)
         {
             var sqlCon = new SqlConnection(Settings.Default.ConectDb);
@@ -72,5 +73,6 @@ namespace GameTest.DB_model
             sqlRe.Read();
             return Convert.ToString(sqlRe["otvet"]);
         }
+        
     }
 }

@@ -253,6 +253,12 @@ namespace GameTest
                 flowLayoutPanel1.Location = new Point(flowLayoutPanel1.Location.X - 150, flowLayoutPanel1.Location.Y);
                 flowLayoutPanel1.Visible = true;
                 button1.Enabled = false; button3.Enabled = false; button2.Enabled = false; pictureBox1.Enabled = false;
+                button5.Text = "Изменить";
+                button6.Text = "Изменить";
+                button7.Text = "Изменить";
+                button8.Text = "Изменить";
+                button9.Text = "Изменить";
+                button10.Text = "Изменить";
 
             }
             else
@@ -264,6 +270,12 @@ namespace GameTest
                 flowLayoutPanel1.Location = new Point(flowLayoutPanel1.Location.X + 150, flowLayoutPanel1.Location.Y);
                 flowLayoutPanel1.Visible = false;
                 button1.Enabled = true; button3.Enabled = true; button2.Enabled = true; pictureBox1.Enabled = true;
+                button5.Text = "Начать";
+                button6.Text = "Начать";
+                button7.Text = "Начать";
+                button8.Text = "Начать";
+                button9.Text = "Начать";
+                button10.Text = "Начать";
             }
             t++;
 
@@ -416,7 +428,78 @@ namespace GameTest
             }
             if (b2 % 2 == 0)
             {
-
+                sqlCon = new SqlConnection(Settings.Default.ConectDb);
+                sqlCon.Open();
+                SqlDataReader sqlRe1 = null;
+                SqlCommand command1 = new SqlCommand("SELECT * FROM [GTK" + tn + "]", sqlCon);
+                sqlRe1 = command1.ExecuteReader();
+                sqlRe1.Read();
+                label15.Text = label15.Text + Convert.ToString(sqlRe1["name_kat"]) + "\n";
+                label8.Text = Convert.ToString(sqlRe1["name_kat"]);
+                for (int x = 1; x < 5; x++)
+                {
+                    command1 = new SqlCommand("SELECT * FROM [GTK" + tn + "] WHERE id_kat=" + x, sqlCon);
+                    sqlRe1.Read();
+                    label15.Text = label15.Text + Convert.ToString(sqlRe1["name_kat"]) + "\n";
+                    switch (x)
+                    {
+                        case 1:
+                            label10.Text = Convert.ToString(sqlRe1["name_kat"]);
+                            break;
+                        case 2:
+                            label11.Text = Convert.ToString(sqlRe1["name_kat"]);
+                            break;
+                        case 3:
+                            label12.Text = Convert.ToString(sqlRe1["name_kat"]);
+                            break;
+                        case 4:
+                            label13.Text = Convert.ToString(sqlRe1["name_kat"]);
+                            break;
+                    }
+                }
+                flowLayoutPanel1.Visible = false;
+                button1.Visible = false;
+                button2.Visible = false;
+                button3.Visible = false;
+                button4.Visible = false;
+                label9.Visible = true;
+                timer1.Start();
+                b2++;
+            }
+            if (b4 % 2 == 0)
+            {
+                sqlCon = new SqlConnection(Settings.Default.ConectDb);
+                sqlCon.Open();
+                SqlDataReader sqlRe1 = null;
+                SqlCommand command1 = new SqlCommand("SELECT * FROM [GTK" + tn + "]", sqlCon);
+                sqlRe1 = command1.ExecuteReader();
+                sqlRe1.Read();
+                label15.Text = label15.Text + Convert.ToString(sqlRe1["name_kat"]) + "\n";
+                label8.Text = Convert.ToString(sqlRe1["name_kat"]);
+                for (int x = 1; x < 5; x++)
+                {
+                    command1 = new SqlCommand("SELECT * FROM [GTK" + tn + "] WHERE id_kat=" + x, sqlCon);
+                    sqlRe1.Read();
+                    label15.Text = label15.Text + Convert.ToString(sqlRe1["name_kat"]) + "\n";
+                    switch (x)
+                    {
+                        case 1:
+                            label10.Text = Convert.ToString(sqlRe1["name_kat"]);
+                            break;
+                        case 2:
+                            label11.Text = Convert.ToString(sqlRe1["name_kat"]);
+                            break;
+                        case 3:
+                            label12.Text = Convert.ToString(sqlRe1["name_kat"]);
+                            break;
+                        case 4:
+                            label13.Text = Convert.ToString(sqlRe1["name_kat"]);
+                            break;
+                    }
+                }
+                flowLayoutPanel1.Visible = false;
+                b4++;
+                t = 1;
             }
         }
 
