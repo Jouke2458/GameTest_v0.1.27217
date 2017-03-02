@@ -28,6 +28,7 @@ namespace GameTest
         {
             Close();
         }
+        public static int tn = 0;
         int i = 1;
         int l = 1;
          private void pictureBox1_Click(object sender, EventArgs e)
@@ -58,85 +59,71 @@ namespace GameTest
 
         private void comboBox1_TextChanged(object sender, EventArgs e)
         {
-            if (comboBox1.Text == "800x600")
+            if (comboBox1.Text == "1024x768")
             {
-                Size = new Size(800,600);
-            }
-            if (comboBox1.Text == "1280x1024")
-            {
-                Size = new Size(1280, 1024);
-                if (checkBox1.Checked == false)
-                {
-                    button1.Location = new Point(400, 200);
-                    button2.Location = new Point(400, 285);
-                    button3.Location = new Point(400, 370);
-                    button4.Location = new Point(400, 455);
-                    tableLayoutPanel1.Location = new Point(250, 200);
-                    flowLayoutPanel1.Location = new Point(flowLayoutPanel1.Location.X, 180);
-                    tableLayoutPanel9.Location = new Point(350, 200);
-                }
-                /* else
-                 {
-                     button1.Location = new Point(300, 100);
-                     button2.Location = new Point(300, 185);
-                     button3.Location = new Point(300, 270);
-                     button4.Location = new Point(300, 355);
-                     tableLayoutPanel1.Location = new Point(100, 50);
-                     flowLayoutPanel1.Location = new Point(flowLayoutPanel1.Location.X, 70);
-                 }*/
-             }
-             if (comboBox1.Text == "1024x768")
-             {
-                 Size = new Size(1024, 768);
-                 if (checkBox1.Checked == false)
-                 {
-                     button1.Location = new Point(300, button1.Location.Y);
-                     button2.Location = new Point(300, button2.Location.Y);
-                     button3.Location = new Point(300, button3.Location.Y);
-                     button4.Location = new Point(300, button4.Location.Y);
-                    tableLayoutPanel1.Location = new Point(250, 100);
-                    flowLayoutPanel1.Location = new Point(flowLayoutPanel1.Location.X + 100, 70);
-                    
-                }
-                 /*else
-                 {
-                     button1.Location = new Point(300, button1.Location.Y);
-                     button2.Location = new Point(300, button2.Location.Y);
-                     button3.Location = new Point(300, button3.Location.Y);
-                     button4.Location = new Point(300, button4.Location.Y);
-                 }*/
-            }
-            if (comboBox1.Text == "1280x720")
-            {
-                Size = new Size(1280, 720);
-                if (checkBox1.Checked == false)
-                {
-                    button1.Location = new Point(400, 100);
-                    button2.Location = new Point(400, 185);
-                    button3.Location = new Point(400, 270);
-                    button4.Location = new Point(400, 355);
-                    tableLayoutPanel1.Location = new Point(250, 100);
-                    flowLayoutPanel1.Location = new Point(flowLayoutPanel1.Location.X, 70);
-                }
-                /* else
-                {
+                Size = new Size(1024, 768);
+                
                     button1.Location = new Point(300, 100);
                     button2.Location = new Point(300, 185);
                     button3.Location = new Point(300, 270);
                     button4.Location = new Point(300, 355);
-                    tableLayoutPanel1.Location = new Point(100, 50);
-                    flowLayoutPanel1.Location = new Point(flowLayoutPanel1.Location.X, 70);
-                }*/
-            }
-            if (comboBox1.Text == "1920x1080")
-            {
-                Size = new Size(1920, 1080);
+                    label9.Location = new Point(400, 200);
+                    tableLayoutPanel8.Location = new Point(150, 80);
+                    flowLayoutPanel1.Location = new Point(750, 70);
+                    tableLayoutPanel1.Location = new Point(120, 100);
+                    label14.Location = new Point(290, 50);
+                    label15.Location = new Point(320, 130);
+                    tableLayoutPanel9.Location = new Point(150, 80);
+                    progressBar1.Location = new Point(325, progressBar1.Location.Y);
+
                 
+            }
+            if (comboBox1.Text == "1280x968")
+            {
+                Size = new Size(1280, 968);
+
+                button1.Location = new Point(400, 200);
+                button2.Location = new Point(400, 285);
+                button3.Location = new Point(400, 370);
+                button4.Location = new Point(400, 455);
+                tableLayoutPanel8.Location = new Point(225, 100);
+                tableLayoutPanel1.Location = new Point(250, 100);
+                flowLayoutPanel1.Location = new Point(900, 180);
+                tableLayoutPanel8.Size = new Size(900, 500);
+                tableLayoutPanel9.Size = new Size(900, 500);
+                label9.Location = new Point(520, 350);
+                label14.Location = new Point(430, 150);
+                label15.Location = new Point(450, 280);
+                tableLayoutPanel9.Location = new Point(225, 100);
+                progressBar1.Location = new Point(450, progressBar1.Location.Y);
+
+            }
+           
+            
+            if (comboBox1.Text == "1920x1000")
+            {
+                Size = new Size(1920, 1000);
+
+                button1.Location = new Point(400, 200);
+                button2.Location = new Point(400, 285);
+                button3.Location = new Point(400, 370);
+                button4.Location = new Point(400, 455);
+                tableLayoutPanel8.Location = new Point(225, 100);
+                tableLayoutPanel1.Location = new Point(250, 100);
+                flowLayoutPanel1.Location = new Point(900, 180);
+                tableLayoutPanel8.Size = new Size(900, 500);
+                tableLayoutPanel9.Size = new Size(900, 500);
+                label9.Location = new Point(520, 350);
+                label14.Location = new Point(430, 150);
+                label15.Location = new Point(450, 280);
+                tableLayoutPanel9.Location = new Point(225, 100);
+                progressBar1.Location = new Point(450, progressBar1.Location.Y);
             }
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
+            axWindowsMediaPlayer2.URL = "1\\kn.mp3";
             if (checkBox1.Checked == true)
             {
                 FormBorderStyle = FormBorderStyle.None;
@@ -145,15 +132,17 @@ namespace GameTest
                 button2.Location = new Point(400, 285);
                 button3.Location = new Point(400, 370);
                 button4.Location = new Point(400, 455);
-                tableLayoutPanel8.Location = new Point(225,200);
-                tableLayoutPanel1.Location = new Point(250, 200);
+                tableLayoutPanel8.Location = new Point(225, 100);
+                tableLayoutPanel1.Location = new Point(250, 100);
                 flowLayoutPanel1.Location = new Point(900, 180);
                 comboBox1.Enabled = false;
                 tableLayoutPanel8.Size = new Size(900, 500);
+                tableLayoutPanel9.Size = new Size(900, 500);
                 label9.Location = new Point(520,350);
                 label14.Location = new Point(430, 150);
                 label15.Location = new Point(450, 280);
-                tableLayoutPanel9.Location = new Point(350,200);
+                tableLayoutPanel9.Location = new Point(225, 100);
+                progressBar1.Location = new Point(450, progressBar1.Location.Y);
             }
             else
             {
@@ -163,16 +152,15 @@ namespace GameTest
                 button2.Location = new Point(300, 185);
                 button3.Location = new Point(300, 270);
                 button4.Location = new Point(300, 355);
-                tableLayoutPanel8.Location = new Point(25, 25);
-                tableLayoutPanel1.Location = new Point(100, 50);
-                flowLayoutPanel1.Location = new Point(550, 70);
+                label9.Location = new Point(400, 200);
                 comboBox1.Enabled = true;
-                tableLayoutPanel8.Size = new Size(740, 390);
-                label9.Location = new Point(300,200);
-                label14.Location = new Point(190, 30);
-                label15.Location = new Point(220, 130);
-                tableLayoutPanel9.Location = new Point(70,70);
-
+                tableLayoutPanel8.Location = new Point(150, 80);
+                flowLayoutPanel1.Location = new Point(750, 70);
+                tableLayoutPanel1.Location = new Point(120, 100);
+                label14.Location = new Point(290, 50);
+                label15.Location = new Point(320, 130);
+                tableLayoutPanel9.Location = new Point(150, 80);
+                progressBar1.Location = new Point(325, progressBar1.Location.Y);
             }
         }
         int t = 1;
@@ -248,30 +236,7 @@ namespace GameTest
 
         private void button3_Click(object sender, EventArgs e)
         {
-            b3++;
-            axWindowsMediaPlayer2.URL = "1\\kn.mp3";
-            if ((t % 2) == 1)
-            {
-                button1.Location = new Point(button1.Location.X - 250, button1.Location.Y);
-                button2.Location = new Point(button2.Location.X - 250, button2.Location.Y);
-                button3.Location = new Point(button3.Location.X - 250, button3.Location.Y);
-                button4.Location = new Point(button4.Location.X - 250, button4.Location.Y);
-                flowLayoutPanel1.Location = new Point(flowLayoutPanel1.Location.X - 150, flowLayoutPanel1.Location.Y);
-                flowLayoutPanel1.Visible = true;
-                button1.Enabled = false; button2.Enabled = false; button4.Enabled = false; pictureBox1.Enabled = false;
-
-            }
-            else
-            {
-                button1.Location = new Point(button1.Location.X + 250, button1.Location.Y);
-                button2.Location = new Point(button2.Location.X + 250, button2.Location.Y);
-                button3.Location = new Point(button3.Location.X + 250, button3.Location.Y);
-                button4.Location = new Point(button4.Location.X + 250, button4.Location.Y);
-                flowLayoutPanel1.Location = new Point(flowLayoutPanel1.Location.X + 150, flowLayoutPanel1.Location.Y);
-                flowLayoutPanel1.Visible = false;
-                button1.Enabled = true; button2.Enabled = true; button4.Enabled = true; pictureBox1.Enabled = true;
-            }
-            t++;
+            
 
         }
 
@@ -308,12 +273,20 @@ namespace GameTest
         {
             sqlCon = new SqlConnection(Settings.Default.ConectDb);
             sqlCon.Open();
-            SqlDataReader sqlRe = null;
-            SqlCommand command = new SqlCommand("SELECT * FROM [GTK1] WHERE id_kat=1", sqlCon);
-                sqlRe = command.ExecuteReader();
-                sqlRe.Read();
-                label1.Text = Convert.ToString(sqlRe["nazvanie"]) + "\n" + "Cоздание:" + Convert.ToString(sqlRe["datas"]) + "\n" + "Изменение:" + Convert.ToString(sqlRe["datar"]); 
-            
+            SqlDataReader sqlRe1 = null;
+            SqlCommand command1 = new SqlCommand("SELECT * FROM [GTK1] WHERE id_kat=1", sqlCon);
+                sqlRe1 = command1.ExecuteReader();
+                sqlRe1.Read();
+                label1.Text = Convert.ToString(sqlRe1["nazvanie"]) + "\n" + "Cоздание:" + Convert.ToString(sqlRe1["datas"]) + "\n" + "Изменение:" + Convert.ToString(sqlRe1["datar"]);
+
+            sqlCon = new SqlConnection(Settings.Default.ConectDb);
+            sqlCon.Open();
+            SqlDataReader sqlRe2 = null;
+            SqlCommand command2 = new SqlCommand("SELECT * FROM [GTK2] WHERE id_kat=1", sqlCon);
+            sqlRe2 = command2.ExecuteReader();
+            sqlRe2.Read();
+            label2.Text = Convert.ToString(sqlRe2["nazvanie"]) + "\n" + "Cоздание:" + Convert.ToString(sqlRe2["datas"]) + "\n" + "Изменение:" + Convert.ToString(sqlRe2["datar"]);
+
             timer1.Stop();
             timer2.Stop();
             timer3.Start();
@@ -340,7 +313,7 @@ namespace GameTest
                     axWindowsMediaPlayer1.settings.volume = trackBar1.Value;
                     break;
                 default:
-                    axWindowsMediaPlayer1.URL = "1\\1.mp3";
+                    axWindowsMediaPlayer1.URL = "1\\2.mp3";
                     axWindowsMediaPlayer1.settings.volume = trackBar1.Value;
                     break;
             }
@@ -352,7 +325,10 @@ namespace GameTest
             label15.Location = new Point(320, 130);
             tableLayoutPanel9.Location = new Point(150, 80);
             axWindowsMediaPlayer2.settings.volume = trackBar1.Value - 3;
-            Size = new Size(800, 600);
+            button1.Location = new Point(300, 100);
+            button2.Location = new Point(300, 185);
+            button3.Location = new Point(300, 270);
+            button4.Location = new Point(300, 355);
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
@@ -384,6 +360,7 @@ namespace GameTest
 
         private void button5_Click(object sender, EventArgs e)
         {
+            tn = 1;
             pictureBox1.Enabled = false;
             pictureBox3.Visible = true;
             button1.Enabled = true;
@@ -401,14 +378,14 @@ namespace GameTest
                 sqlCon = new SqlConnection(Settings.Default.ConectDb);
                 sqlCon.Open();
                 SqlDataReader sqlRe1 = null;
-                SqlCommand command1 = new SqlCommand("SELECT * FROM [GTK1]", sqlCon);
+                SqlCommand command1 = new SqlCommand("SELECT * FROM [GTK"+ tn +"]", sqlCon);
                         sqlRe1 = command1.ExecuteReader();
                         sqlRe1.Read();
                     label15.Text = label15.Text + Convert.ToString(sqlRe1["name_kat"]) + "\n";
                     label8.Text = Convert.ToString(sqlRe1["name_kat"]);
                 for (int x = 1; x < 5; x++)
                 {
-                    command1 = new SqlCommand("SELECT * FROM [GTK1] WHERE id_kat=" + x, sqlCon);
+                    command1 = new SqlCommand("SELECT * FROM [GTK" + tn + "] WHERE id_kat=" + x, sqlCon);
                     sqlRe1.Read();
                     label15.Text = label15.Text + Convert.ToString(sqlRe1["name_kat"]) + "\n";
                     switch (x)
@@ -445,6 +422,7 @@ namespace GameTest
 
         private void button6_Click(object sender, EventArgs e)
         {
+            tn = 2;
             pictureBox1.Enabled = false;
             pictureBox3.Visible = true;
             button1.Enabled = true;
@@ -457,9 +435,47 @@ namespace GameTest
             button4.Location = new Point(button4.Location.X + 250, button4.Location.Y);
             flowLayoutPanel1.Location = new Point(flowLayoutPanel1.Location.X + 150, flowLayoutPanel1.Location.Y);
             axWindowsMediaPlayer2.URL = "1\\kn.mp3";
-            flowLayoutPanel1.Visible = false;
-            t=1;
-            b1 = 1;
+            if (b1 % 2 == 0)
+            {
+                sqlCon = new SqlConnection(Settings.Default.ConectDb);
+                sqlCon.Open();
+                SqlDataReader sqlRe1 = null;
+                SqlCommand command1 = new SqlCommand("SELECT * FROM [GTK" + tn + "]", sqlCon);
+                sqlRe1 = command1.ExecuteReader();
+                sqlRe1.Read();
+                label15.Text = label15.Text + Convert.ToString(sqlRe1["name_kat"]) + "\n";
+                label8.Text = Convert.ToString(sqlRe1["name_kat"]);
+                for (int x = 1; x < 5; x++)
+                {
+                    command1 = new SqlCommand("SELECT * FROM [GTK" + tn + "] WHERE id_kat=" + x, sqlCon);
+                    sqlRe1.Read();
+                    label15.Text = label15.Text + Convert.ToString(sqlRe1["name_kat"]) + "\n";
+                    switch (x)
+                    {
+                        case 1:
+                            label10.Text = Convert.ToString(sqlRe1["name_kat"]);
+                            break;
+                        case 2:
+                            label11.Text = Convert.ToString(sqlRe1["name_kat"]);
+                            break;
+                        case 3:
+                            label12.Text = Convert.ToString(sqlRe1["name_kat"]);
+                            break;
+                        case 4:
+                            label13.Text = Convert.ToString(sqlRe1["name_kat"]);
+                            break;
+                    }
+                }
+                flowLayoutPanel1.Visible = false;
+                button1.Visible = false;
+                button2.Visible = false;
+                button3.Visible = false;
+                button4.Visible = false;
+                label9.Visible = true;
+                timer1.Start();
+                b1++;
+
+            }
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -592,6 +608,7 @@ namespace GameTest
             button14.Visible = true;
             button15.Visible = true;
             tableLayoutPanel9.Visible = false;
+            progressBar1.Value = 0;
             progressBar1.Visible = false;
             timer4.Stop();
             timer5.Stop();
@@ -643,7 +660,7 @@ namespace GameTest
         private void button11_Click(object sender, EventArgs e)
         {
             vop = 1;
-            label16.Text = Context.Vops(vop);
+            label16.Text = Context.Vops(vop,tn);
             tableLayoutPanel8.Visible = false;
             tableLayoutPanel9.Visible = true;
             timer4.Start();
@@ -657,7 +674,7 @@ namespace GameTest
                     progressBar1.Value += 1;
                 else
                 {
-                label16.Text = Context.Otv(vop);
+                label16.Text = Context.Otv(vop,tn);
                 axWindowsMediaPlayer2.URL = "1\\kn.mp3";
                 timer4.Stop();
                 timer5.Start();
@@ -676,7 +693,7 @@ namespace GameTest
         private void button12_Click(object sender, EventArgs e)
         {
             vop = 2;
-            label16.Text = Context.Vops(vop);
+            label16.Text = Context.Vops(vop,tn);
             tableLayoutPanel8.Visible = false;
             tableLayoutPanel9.Visible = true;
             timer4.Start();
@@ -687,7 +704,7 @@ namespace GameTest
         private void button13_Click(object sender, EventArgs e)
         {
             vop = 3;
-            label16.Text = Context.Vops(vop);
+            label16.Text = Context.Vops(vop,tn);
             tableLayoutPanel8.Visible = false;
             tableLayoutPanel9.Visible = true;
             timer4.Start();
@@ -698,7 +715,7 @@ namespace GameTest
         private void button14_Click(object sender, EventArgs e)
         {
             vop = 4;
-            label16.Text = Context.Vops(vop);
+            label16.Text = Context.Vops(vop,tn);
             tableLayoutPanel8.Visible = false;
             tableLayoutPanel9.Visible = true;
             timer4.Start();
@@ -709,7 +726,7 @@ namespace GameTest
         private void button15_Click(object sender, EventArgs e)
         {
             vop = 5;
-            label16.Text = Context.Vops(vop);
+            label16.Text = Context.Vops(vop,tn);
             tableLayoutPanel8.Visible = false;
             tableLayoutPanel9.Visible = true;
             timer4.Start();
@@ -734,7 +751,37 @@ namespace GameTest
                 Tru = true;
             }
         }
-        
+
+        private void randAudio_Click(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer2.URL = "1\\kn.mp3";
+            Random m1 = new Random();
+            int m = m1.Next(1, 5);
+            switch (m)
+            {
+                case 1:
+                    axWindowsMediaPlayer1.URL = "1\\1.mp3";
+                    axWindowsMediaPlayer1.settings.volume = trackBar1.Value;
+                    break;
+                case 2:
+                    axWindowsMediaPlayer1.URL = "1\\2.mp3";
+                    axWindowsMediaPlayer1.settings.volume = trackBar1.Value;
+                    break;
+                case 3:
+                    axWindowsMediaPlayer1.URL = "1\\3.mp3";
+                    axWindowsMediaPlayer1.settings.volume = trackBar1.Value;
+                    break;
+                case 4:
+                    axWindowsMediaPlayer1.URL = "1\\4.mp3";
+                    axWindowsMediaPlayer1.settings.volume = trackBar1.Value;
+                    break;
+                default:
+                    axWindowsMediaPlayer1.URL = "1\\1.mp3";
+                    axWindowsMediaPlayer1.settings.volume = trackBar1.Value;
+                    break;
+            }
+        }
+
 
         ////////////////////////////////////////////////
     }

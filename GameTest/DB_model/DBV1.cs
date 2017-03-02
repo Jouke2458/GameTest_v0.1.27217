@@ -26,17 +26,18 @@ namespace GameTest.DB_model
         public DateTime datas { get; set; }
         public DateTime datar { get; set; }
     }
+    
     public class Context
     {
         List<DBV1> DBv1 = new List<DBV1>();
         List<DBK1> DBk1 = new List<DBK1>();
-
-        public List<DBV1> GetAllEllementsDBv1()
+        
+        public List<DBV1> GetAllEllementsDBv1(int tn)
         {
             SqlConnection sqlCon = new SqlConnection(Settings.Default.ConectDb);
             sqlCon.Open();
             SqlDataReader sqlRe = null;
-            SqlCommand command = new SqlCommand("SELECT * FROM [GTV1]", sqlCon);
+            SqlCommand command = new SqlCommand("SELECT * FROM [GTV" + tn +"]", sqlCon);
             sqlRe = command.ExecuteReader();
             sqlRe.Read();
             foreach (DbDataRecord s in sqlRe)
@@ -51,22 +52,22 @@ namespace GameTest.DB_model
             }
             return DBv1;
         }
-        public static string Vops(int vop)
+        public static string Vops(int vop, int tn)
         {
             var sqlCon = new SqlConnection(Settings.Default.ConectDb);
             sqlCon.Open();
             SqlDataReader sqlRe = null;
-            SqlCommand command = new SqlCommand("SELECT * FROM [GTV1] WHERE id=" + vop, sqlCon);
+            SqlCommand command = new SqlCommand("SELECT * FROM [GTV" + tn + "] WHERE id=" + vop, sqlCon);
             sqlRe = command.ExecuteReader();
             sqlRe.Read();
             return Convert.ToString(sqlRe["tekst"]);
         }
-        public static string Otv(int vop)
+        public static string Otv(int vop,int tn)
         {
             var sqlCon = new SqlConnection(Settings.Default.ConectDb);
             sqlCon.Open();
             SqlDataReader sqlRe = null;
-            SqlCommand command = new SqlCommand("SELECT * FROM [GTV1] WHERE id=" + vop, sqlCon);
+            SqlCommand command = new SqlCommand("SELECT * FROM [GTV" + tn + "] WHERE id=" + vop, sqlCon);
             sqlRe = command.ExecuteReader();
             sqlRe.Read();
             return Convert.ToString(sqlRe["otvet"]);

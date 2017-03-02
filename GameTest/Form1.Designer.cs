@@ -41,8 +41,9 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.randAudio = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
@@ -140,7 +141,7 @@
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
             this.button1.Location = new System.Drawing.Point(300, 100);
             this.button1.MaximumSize = new System.Drawing.Size(500, 0);
-            this.button1.MinimumSize = new System.Drawing.Size(250, 60);
+            this.button1.MinimumSize = new System.Drawing.Size(450, 60);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button1.Size = new System.Drawing.Size(474, 60);
@@ -195,7 +196,7 @@
             this.button2.ForeColor = System.Drawing.SystemColors.Control;
             this.button2.Location = new System.Drawing.Point(300, 185);
             this.button2.MaximumSize = new System.Drawing.Size(500, 0);
-            this.button2.MinimumSize = new System.Drawing.Size(250, 60);
+            this.button2.MinimumSize = new System.Drawing.Size(450, 60);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(474, 60);
             this.button2.TabIndex = 6;
@@ -216,11 +217,11 @@
             this.button3.ForeColor = System.Drawing.SystemColors.Control;
             this.button3.Location = new System.Drawing.Point(300, 270);
             this.button3.MaximumSize = new System.Drawing.Size(500, 0);
-            this.button3.MinimumSize = new System.Drawing.Size(250, 60);
+            this.button3.MinimumSize = new System.Drawing.Size(450, 60);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(474, 60);
             this.button3.TabIndex = 7;
-            this.button3.Text = "Создать";
+            this.button3.Text = "Правила";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -237,7 +238,7 @@
             this.button4.ForeColor = System.Drawing.SystemColors.Control;
             this.button4.Location = new System.Drawing.Point(300, 355);
             this.button4.MaximumSize = new System.Drawing.Size(500, 0);
-            this.button4.MinimumSize = new System.Drawing.Size(250, 60);
+            this.button4.MinimumSize = new System.Drawing.Size(450, 60);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(474, 60);
             this.button4.TabIndex = 8;
@@ -253,28 +254,30 @@
             this.tableLayoutPanel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.tableLayoutPanel1.BackgroundImage = global::GameTest.Properties.Resources.kn;
             this.tableLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnCount = 4;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.267716F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 91.73228F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 288F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 231F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 79F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Controls.Add(this.checkBox1, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.comboBox1, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.label7, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.checkBox2, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox3, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.trackBar1, 2, 3);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(821, 12);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox3, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.randAudio, 3, 3);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(873, 10);
             this.tableLayoutPanel1.MaximumSize = new System.Drawing.Size(800, 422);
             this.tableLayoutPanel1.MinimumSize = new System.Drawing.Size(800, 422);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 5;
+            this.tableLayoutPanel1.RowCount = 6;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.21951F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.78049F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 246F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 231F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 422);
             this.tableLayoutPanel1.TabIndex = 9;
             this.tableLayoutPanel1.Visible = false;
@@ -288,7 +291,7 @@
             this.checkBox1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.checkBox1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.checkBox1.ForeColor = System.Drawing.Color.White;
-            this.checkBox1.Location = new System.Drawing.Point(45, 45);
+            this.checkBox1.Location = new System.Drawing.Point(43, 39);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(141, 25);
             this.checkBox1.TabIndex = 1;
@@ -304,16 +307,15 @@
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "800x600",
             "1024x768",
-            "1280x720",
-            "1280x1024"});
-            this.comboBox1.Location = new System.Drawing.Point(45, 85);
+            "1280x968",
+            "1920x1000"});
+            this.comboBox1.Location = new System.Drawing.Point(43, 74);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(150, 28);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.TabStop = false;
-            this.comboBox1.Text = "800x600";
+            this.comboBox1.Text = "1024x768";
             this.comboBox1.TextChanged += new System.EventHandler(this.comboBox1_TextChanged);
             // 
             // label7
@@ -323,7 +325,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(363, 0);
+            this.label7.Location = new System.Drawing.Point(341, 0);
             this.label7.Margin = new System.Windows.Forms.Padding(3, 0, 20, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(128, 25);
@@ -338,13 +340,27 @@
             this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.checkBox2.ForeColor = System.Drawing.Color.White;
-            this.checkBox2.Location = new System.Drawing.Point(514, 45);
+            this.checkBox2.Location = new System.Drawing.Point(492, 39);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(88, 25);
             this.checkBox2.TabIndex = 2;
             this.checkBox2.Text = "музыка";
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            // 
+            // trackBar1
+            // 
+            this.trackBar1.AutoSize = false;
+            this.trackBar1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.trackBar1.Location = new System.Drawing.Point(492, 112);
+            this.trackBar1.Margin = new System.Windows.Forms.Padding(3, 7, 10, 10);
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.trackBar1.Size = new System.Drawing.Size(216, 23);
+            this.trackBar1.TabIndex = 5;
+            this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.trackBar1.Value = 5;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
             // checkBox3
             // 
@@ -354,7 +370,7 @@
             this.checkBox3.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.checkBox3.ForeColor = System.Drawing.Color.White;
-            this.checkBox3.Location = new System.Drawing.Point(514, 85);
+            this.checkBox3.Location = new System.Drawing.Point(492, 74);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(73, 25);
             this.checkBox3.TabIndex = 3;
@@ -362,22 +378,27 @@
             this.checkBox3.UseVisualStyleBackColor = true;
             this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
-            // trackBar1
+            // randAudio
             // 
-            this.trackBar1.AutoSize = false;
-            this.trackBar1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.trackBar1.Location = new System.Drawing.Point(514, 126);
-            this.trackBar1.Margin = new System.Windows.Forms.Padding(3, 7, 10, 10);
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.trackBar1.Size = new System.Drawing.Size(200, 25);
-            this.trackBar1.TabIndex = 5;
-            this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.None;
-            this.trackBar1.Value = 5;
-            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            this.randAudio.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.randAudio.BackgroundImage = global::GameTest.Properties.Resources.kn;
+            this.randAudio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.randAudio.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.randAudio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.randAudio.ForeColor = System.Drawing.Color.White;
+            this.randAudio.Location = new System.Drawing.Point(723, 108);
+            this.randAudio.Name = "randAudio";
+            this.randAudio.Size = new System.Drawing.Size(70, 27);
+            this.randAudio.TabIndex = 6;
+            this.randAudio.Text = "+";
+            this.randAudio.UseVisualStyleBackColor = false;
+            this.randAudio.Click += new System.EventHandler(this.randAudio_Click);
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.BackgroundImage = global::GameTest.Properties.Resources.kn;
             this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -387,7 +408,7 @@
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel5);
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel6);
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel7);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(863, 216);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(826, 147);
             this.flowLayoutPanel1.MaximumSize = new System.Drawing.Size(355, 415);
             this.flowLayoutPanel1.MinimumSize = new System.Drawing.Size(355, 415);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -397,6 +418,7 @@
             // 
             // tableLayoutPanel2
             // 
+            this.tableLayoutPanel2.AutoSize = true;
             this.tableLayoutPanel2.BackgroundImage = global::GameTest.Properties.Resources.kn;
             this.tableLayoutPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tableLayoutPanel2.ColumnCount = 2;
@@ -405,11 +427,12 @@
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.button5, 1, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel2.MinimumSize = new System.Drawing.Size(347, 63);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85.52631F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.47368F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(347, 63);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(349, 63);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // label1
@@ -426,13 +449,15 @@
             // 
             // button5
             // 
-            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button5.BackgroundImage = global::GameTest.Properties.Resources.kn;
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(255, 3);
+            this.button5.Location = new System.Drawing.Point(257, 3);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(89, 57);
             this.button5.TabIndex = 1;
@@ -442,6 +467,7 @@
             // 
             // tableLayoutPanel3
             // 
+            this.tableLayoutPanel3.AutoSize = true;
             this.tableLayoutPanel3.BackgroundImage = global::GameTest.Properties.Resources.kn;
             this.tableLayoutPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tableLayoutPanel3.ColumnCount = 2;
@@ -450,11 +476,12 @@
             this.tableLayoutPanel3.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.button6, 1, 0);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 72);
+            this.tableLayoutPanel3.MinimumSize = new System.Drawing.Size(347, 63);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85.52631F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.47368F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(347, 63);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(349, 63);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // label2
@@ -477,7 +504,7 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(255, 3);
+            this.button6.Location = new System.Drawing.Point(257, 3);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(89, 57);
             this.button6.TabIndex = 1;
@@ -487,6 +514,10 @@
             // 
             // tableLayoutPanel4
             // 
+            this.tableLayoutPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel4.AutoSize = true;
             this.tableLayoutPanel4.BackgroundImage = global::GameTest.Properties.Resources.kn;
             this.tableLayoutPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tableLayoutPanel4.ColumnCount = 2;
@@ -495,11 +526,12 @@
             this.tableLayoutPanel4.Controls.Add(this.label3, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.button7, 1, 0);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 141);
+            this.tableLayoutPanel4.MinimumSize = new System.Drawing.Size(347, 63);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85.52631F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.47368F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(347, 63);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(349, 63);
             this.tableLayoutPanel4.TabIndex = 2;
             // 
             // label3
@@ -522,7 +554,7 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(255, 3);
+            this.button7.Location = new System.Drawing.Point(257, 3);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(89, 57);
             this.button7.TabIndex = 1;
@@ -532,6 +564,10 @@
             // 
             // tableLayoutPanel5
             // 
+            this.tableLayoutPanel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel5.AutoSize = true;
             this.tableLayoutPanel5.BackgroundImage = global::GameTest.Properties.Resources.kn;
             this.tableLayoutPanel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tableLayoutPanel5.ColumnCount = 2;
@@ -540,11 +576,12 @@
             this.tableLayoutPanel5.Controls.Add(this.label4, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.button8, 1, 0);
             this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 210);
+            this.tableLayoutPanel5.MinimumSize = new System.Drawing.Size(347, 63);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85.52631F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.47368F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(347, 63);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(349, 63);
             this.tableLayoutPanel5.TabIndex = 3;
             // 
             // label4
@@ -567,7 +604,7 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(255, 3);
+            this.button8.Location = new System.Drawing.Point(257, 3);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(89, 57);
             this.button8.TabIndex = 1;
@@ -577,6 +614,10 @@
             // 
             // tableLayoutPanel6
             // 
+            this.tableLayoutPanel6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel6.AutoSize = true;
             this.tableLayoutPanel6.BackgroundImage = global::GameTest.Properties.Resources.kn;
             this.tableLayoutPanel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tableLayoutPanel6.ColumnCount = 2;
@@ -585,11 +626,12 @@
             this.tableLayoutPanel6.Controls.Add(this.label5, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.button9, 1, 0);
             this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 279);
+            this.tableLayoutPanel6.MinimumSize = new System.Drawing.Size(347, 63);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85.52631F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.47368F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(347, 63);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(349, 63);
             this.tableLayoutPanel6.TabIndex = 4;
             // 
             // label5
@@ -612,7 +654,7 @@
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Location = new System.Drawing.Point(255, 3);
+            this.button9.Location = new System.Drawing.Point(257, 3);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(89, 57);
             this.button9.TabIndex = 1;
@@ -622,6 +664,10 @@
             // 
             // tableLayoutPanel7
             // 
+            this.tableLayoutPanel7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel7.AutoSize = true;
             this.tableLayoutPanel7.BackgroundImage = global::GameTest.Properties.Resources.kn;
             this.tableLayoutPanel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tableLayoutPanel7.ColumnCount = 2;
@@ -630,11 +676,12 @@
             this.tableLayoutPanel7.Controls.Add(this.label6, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.button10, 1, 0);
             this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 348);
+            this.tableLayoutPanel7.MinimumSize = new System.Drawing.Size(347, 63);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 1;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85.52631F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.47368F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(347, 63);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(349, 63);
             this.tableLayoutPanel7.TabIndex = 5;
             // 
             // label6
@@ -657,7 +704,7 @@
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button10.ForeColor = System.Drawing.Color.White;
-            this.button10.Location = new System.Drawing.Point(255, 3);
+            this.button10.Location = new System.Drawing.Point(257, 3);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(89, 57);
             this.button10.TabIndex = 1;
@@ -731,7 +778,6 @@
             this.tableLayoutPanel8.Controls.Add(this.label13, 0, 4);
             this.tableLayoutPanel8.Controls.Add(this.label12, 0, 3);
             this.tableLayoutPanel8.Location = new System.Drawing.Point(93, 618);
-            this.tableLayoutPanel8.MaximumSize = new System.Drawing.Size(740, 390);
             this.tableLayoutPanel8.MinimumSize = new System.Drawing.Size(740, 390);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 5;
@@ -1262,7 +1308,7 @@
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 4000;
+            this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // label9
@@ -1323,7 +1369,7 @@
             // timer2
             // 
             this.timer2.Enabled = true;
-            this.timer2.Interval = 4000;
+            this.timer2.Interval = 1000;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // pictureBox3
@@ -1364,7 +1410,7 @@
             // 
             // timer3
             // 
-            this.timer3.Interval = 150000;
+            this.timer3.Interval = 100000;
             this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
             // 
             // tableLayoutPanel9
@@ -1377,10 +1423,9 @@
             this.tableLayoutPanel9.ColumnCount = 3;
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.240059F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 96.75994F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 29F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.tableLayoutPanel9.Controls.Add(this.label16, 1, 1);
             this.tableLayoutPanel9.Location = new System.Drawing.Point(927, 508);
-            this.tableLayoutPanel9.MaximumSize = new System.Drawing.Size(740, 390);
             this.tableLayoutPanel9.MinimumSize = new System.Drawing.Size(740, 390);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 3;
@@ -1401,10 +1446,10 @@
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(83, 41);
+            this.label16.Location = new System.Drawing.Point(82, 41);
             this.label16.Margin = new System.Windows.Forms.Padding(60, 20, 50, 60);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(577, 264);
+            this.label16.Size = new System.Drawing.Size(576, 264);
             this.label16.TabIndex = 0;
             this.label16.Text = "text";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1424,7 +1469,7 @@
             this.progressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.progressBar1.ForeColor = System.Drawing.Color.White;
-            this.progressBar1.Location = new System.Drawing.Point(326, 10);
+            this.progressBar1.Location = new System.Drawing.Point(325, 10);
             this.progressBar1.Maximum = 150;
             this.progressBar1.MaximumSize = new System.Drawing.Size(400, 20);
             this.progressBar1.MinimumSize = new System.Drawing.Size(400, 20);
@@ -1475,6 +1520,7 @@
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
@@ -1579,6 +1625,7 @@
         private System.Windows.Forms.Timer timer4;
         private System.Windows.Forms.Timer timer5;
         private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Button randAudio;
     }
 }
 
