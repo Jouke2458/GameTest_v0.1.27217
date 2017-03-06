@@ -43,7 +43,7 @@ namespace GameTest
                     button3.Visible = false;
                     button4.Visible = false;
                     tableLayoutPanel1.Visible = true;
-
+                tableLayoutPanel10.Visible = false;
                 }
                 else
                 {
@@ -468,35 +468,8 @@ namespace GameTest
             }
             if (b4 % 2 == 0)
             {
-                sqlCon = new SqlConnection(Settings.Default.ConectDb);
-                sqlCon.Open();
-                SqlDataReader sqlRe1 = null;
-                SqlCommand command1 = new SqlCommand("SELECT * FROM [GTK" + tn + "]", sqlCon);
-                sqlRe1 = command1.ExecuteReader();
-                sqlRe1.Read();
-                label15.Text = label15.Text + Convert.ToString(sqlRe1["name_kat"]) + "\n";
-                label8.Text = Convert.ToString(sqlRe1["name_kat"]);
-                for (int x = 1; x < 5; x++)
-                {
-                    command1 = new SqlCommand("SELECT * FROM [GTK" + tn + "] WHERE id_kat=" + x, sqlCon);
-                    sqlRe1.Read();
-                    label15.Text = label15.Text + Convert.ToString(sqlRe1["name_kat"]) + "\n";
-                    switch (x)
-                    {
-                        case 1:
-                            label10.Text = Convert.ToString(sqlRe1["name_kat"]);
-                            break;
-                        case 2:
-                            label11.Text = Convert.ToString(sqlRe1["name_kat"]);
-                            break;
-                        case 3:
-                            label12.Text = Convert.ToString(sqlRe1["name_kat"]);
-                            break;
-                        case 4:
-                            label13.Text = Convert.ToString(sqlRe1["name_kat"]);
-                            break;
-                    }
-                }
+                tableLayoutPanel10.Visible = true;
+                pictureBox1.Enabled = true;
                 flowLayoutPanel1.Visible = false;
                 b4++;
                 t = 1;
@@ -743,6 +716,7 @@ namespace GameTest
         private void button11_Click(object sender, EventArgs e)
         {
             vop = 1;
+            progressBar1.Value = 0;
             label16.Text = Context.Vops(vop,tn);
             tableLayoutPanel8.Visible = false;
             tableLayoutPanel9.Visible = true;
@@ -776,6 +750,7 @@ namespace GameTest
         private void button12_Click(object sender, EventArgs e)
         {
             vop = 2;
+            progressBar1.Value = 0;
             label16.Text = Context.Vops(vop,tn);
             tableLayoutPanel8.Visible = false;
             tableLayoutPanel9.Visible = true;
@@ -787,6 +762,7 @@ namespace GameTest
         private void button13_Click(object sender, EventArgs e)
         {
             vop = 3;
+            progressBar1.Value = 0;
             label16.Text = Context.Vops(vop,tn);
             tableLayoutPanel8.Visible = false;
             tableLayoutPanel9.Visible = true;
@@ -798,6 +774,7 @@ namespace GameTest
         private void button14_Click(object sender, EventArgs e)
         {
             vop = 4;
+            progressBar1.Value = 0;
             label16.Text = Context.Vops(vop,tn);
             tableLayoutPanel8.Visible = false;
             tableLayoutPanel9.Visible = true;
@@ -809,6 +786,7 @@ namespace GameTest
         private void button15_Click(object sender, EventArgs e)
         {
             vop = 5;
+            progressBar1.Value = 0;
             label16.Text = Context.Vops(vop,tn);
             tableLayoutPanel8.Visible = false;
             tableLayoutPanel9.Visible = true;
@@ -817,8 +795,7 @@ namespace GameTest
             progressBar1.Visible = true;
         }
         
-        // Max.porn
-
+        
        static public bool Tru = true;
         private void tableLayoutPanel9_Click(object sender, EventArgs e)
         {
@@ -865,7 +842,64 @@ namespace GameTest
             }
         }
 
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.NumPad1)
+            {
+                axWindowsMediaPlayer2.URL = "1\\kn.mp3";
+                if(Tru)
+                {
+                    timer4.Stop();
+                    Tru = false;
+                }
+                else
+                {
+                    timer4.Start();
+                    Tru = true;
+                }
+            }
+        }
+        int itemup1 = 0;
+        int itemup2 = 0;
+        int itemup3 = 0;
+        private void button36_Click(object sender, EventArgs e)
+        {
+            if (itemup1 < 5)
+            { 
+                comboBox2.Items.Add(comboBox2.Text);
+                itemup1++;
+            }
+        }
 
-        ////////////////////////////////////////////////
+        private void button37_Click(object sender, EventArgs e)
+        {
+            if (itemup2 < 5)
+            {
+                comboBox3.Items.Add(comboBox2.Text);
+                itemup2++;
+            }
+        }
+
+        private void button38_Click(object sender, EventArgs e)
+        {
+            if (itemup3 < 5)
+            {
+                comboBox4.Items.Add(comboBox2.Text);
+                itemup3++;
+            }
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            sqlCon = new SqlConnection(Settings.Default.ConectDb);
+            for (int x = 0; x < 5; x++)
+            {
+                sqlCon.Open();
+                SqlCommand command = new SqlCommand("INSERT INTO [GTK" + tn + "] (name_kat) VALUES (@name_kat) WHERE id_kat=" + x+1, sqlCon);
+                command.Parameters.Add("@name_kat", SqlDbType.NVarChar).Value = comboBox2.Items[x];
+                command.ExecuteNonQuery();
+            }
+            sqlCon.Close();
+        }
     }
 }
