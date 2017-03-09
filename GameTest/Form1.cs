@@ -143,6 +143,9 @@ namespace GameTest
                 label15.Location = new Point(450, 280);
                 tableLayoutPanel9.Location = new Point(225, 100);
                 progressBar1.Location = new Point(450, progressBar1.Location.Y);
+                groupBox1.Location = new Point(200, 700);
+                groupBox2.Location = new Point(500, 700);
+                groupBox3.Location = new Point(800, 700);
             }
             else
             {
@@ -161,6 +164,9 @@ namespace GameTest
                 label15.Location = new Point(320, 130);
                 tableLayoutPanel9.Location = new Point(150, 80);
                 progressBar1.Location = new Point(325, progressBar1.Location.Y);
+                groupBox1.Location = new Point(150, 490);
+                groupBox2.Location = new Point(375, 490);
+                groupBox3.Location = new Point(600, 490);
             }
         }
         int t = 1;
@@ -341,6 +347,7 @@ namespace GameTest
             button2.Location = new Point(300, 185);
             button3.Location = new Point(300, 270);
             button4.Location = new Point(300, 355);
+            tableLayoutPanel10.Location = new Point(150, 100);
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
@@ -421,8 +428,12 @@ namespace GameTest
                 button2.Visible = false;
                 button3.Visible = false;
                 button4.Visible = false;
-                label9.Visible = true;
-                timer1.Start();
+                
+                groupBox1.Visible = true;
+                groupBox2.Visible = true;
+                groupBox3.Visible = true;
+                button39.Visible = true;
+                //timer1.Start();
                 b1++;
 
             }
@@ -626,6 +637,9 @@ namespace GameTest
             tableLayoutPanel8.Visible = true;
             pictureBox4.Visible = true;
             pictureBox3.Enabled = true;
+            groupBox1.Visible = true;
+            groupBox2.Visible = true;
+            groupBox3.Visible = true;
             timer2.Stop();
         }
 
@@ -666,6 +680,9 @@ namespace GameTest
             tableLayoutPanel9.Visible = false;
             progressBar1.Value = 0;
             progressBar1.Visible = false;
+            groupBox1.Visible = false;
+            groupBox2.Visible = false;
+            groupBox3.Visible = false;
             timer4.Stop();
             timer5.Stop();
         }
@@ -713,16 +730,18 @@ namespace GameTest
             
         }
         int vop = 0;
+        public int och = 0;
         private void button11_Click(object sender, EventArgs e)
         {
             vop = 1;
             progressBar1.Value = 0;
-            label16.Text = Context.Vops(vop,tn);
+            label16.Text = Helper.Vops(vop,tn);
             tableLayoutPanel8.Visible = false;
             tableLayoutPanel9.Visible = true;
             timer4.Start();
             button11.Visible = false;
             progressBar1.Visible = true;
+            och = 1;
         }
         
         private void timer4_Tick(object sender, EventArgs e)
@@ -731,7 +750,7 @@ namespace GameTest
                     progressBar1.Value += 1;
                 else
                 {
-                label16.Text = Context.Otv(vop,tn);
+                label16.Text = Helper.Otv(vop,tn);
                 axWindowsMediaPlayer2.URL = "1\\kn.mp3";
                 timer4.Stop();
                 timer5.Start();
@@ -751,48 +770,52 @@ namespace GameTest
         {
             vop = 2;
             progressBar1.Value = 0;
-            label16.Text = Context.Vops(vop,tn);
+            label16.Text = Helper.Vops(vop,tn);
             tableLayoutPanel8.Visible = false;
             tableLayoutPanel9.Visible = true;
             timer4.Start();
             button12.Visible = false;
             progressBar1.Visible = true;
+            och = 2;
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
             vop = 3;
             progressBar1.Value = 0;
-            label16.Text = Context.Vops(vop,tn);
+            label16.Text = Helper.Vops(vop,tn);
             tableLayoutPanel8.Visible = false;
             tableLayoutPanel9.Visible = true;
             timer4.Start();
             button13.Visible = false;
             progressBar1.Visible = true;
+            och = 3;
         }
 
         private void button14_Click(object sender, EventArgs e)
         {
             vop = 4;
             progressBar1.Value = 0;
-            label16.Text = Context.Vops(vop,tn);
+            label16.Text = Helper.Vops(vop,tn);
             tableLayoutPanel8.Visible = false;
             tableLayoutPanel9.Visible = true;
             timer4.Start();
             button14.Visible = false;
             progressBar1.Visible = true;
+            och = 4;
         }
 
         private void button15_Click(object sender, EventArgs e)
         {
             vop = 5;
             progressBar1.Value = 0;
-            label16.Text = Context.Vops(vop,tn);
+            label16.Text = Helper.Vops(vop,tn);
             tableLayoutPanel8.Visible = false;
             tableLayoutPanel9.Visible = true;
             timer4.Start();
             button15.Visible = false;
             progressBar1.Visible = true;
+            och = 5;
         }
         
         
@@ -891,15 +914,93 @@ namespace GameTest
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
+            
             sqlCon = new SqlConnection(Settings.Default.ConectDb);
+            SqlCommand command = new SqlCommand();
+         
             for (int x = 0; x < 5; x++)
             {
                 sqlCon.Open();
-                SqlCommand command = new SqlCommand("INSERT INTO [GTK" + tn + "] (name_kat) VALUES (@name_kat) WHERE id_kat=" + x+1, sqlCon);
-                command.Parameters.Add("@name_kat", SqlDbType.NVarChar).Value = comboBox2.Items[x];
+                command = new SqlCommand("UPDATE GTK" + tn + " SET name_kat = " + comboBox2.Items[x] + " WHERE id_kat = " + x + 1,sqlCon);
+                
                 command.ExecuteNonQuery();
+                sqlCon.Close();
             }
+           
+            
             sqlCon.Close();
+        }
+
+        private void button39_Click(object sender, EventArgs e)
+        {
+            label20.Text = textBox2.Text;
+            label21.Text = textBox3.Text;
+            label22.Text = textBox4.Text;
+            textBox2.Text = "0";
+            textBox3.Text = "0";
+            textBox4.Text = "0";
+            groupBox1.Visible = false;
+            groupBox2.Visible = false;
+            groupBox3.Visible = false;
+            button39.Visible = false;
+            label9.Visible = true;
+            timer1.Start();
+        }
+        public int ochki1 = 0;
+        public int ochki2 = 0;
+        public int ochki3 = 0;
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            if (progressBar1.Value > 0)
+            {
+                ochki1 = ochki1 + och;
+                textBox2.Text = Convert.ToString(ochki1);
+                progressBar1.Value = progressBar1.Maximum;
+                timer4.Start();
+            }
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            if (progressBar1.Value > 0)
+            {
+                ochki2 = ochki2 + och;
+                textBox3.Text = Convert.ToString(ochki2);
+                progressBar1.Value = progressBar1.Maximum;
+                timer4.Start();
+            }
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            if (progressBar1.Value > 0)
+            {
+                ochki3 = ochki3 + och;
+                textBox4.Text = Convert.ToString(ochki3);
+                progressBar1.Value = progressBar1.Maximum;
+                timer4.Start();
+            }
+        }
+
+        private void pictureBox7_MouseLeave(object sender, EventArgs e)
+        {
+            ochki1 = ochki1 - och;
+            textBox2.Text = Convert.ToString(ochki1);
+            timer4.Start();
+        }
+
+        private void pictureBox8_MouseLeave(object sender, EventArgs e)
+        {
+            ochki2 = ochki2 - och;
+            textBox3.Text = Convert.ToString(ochki2);
+            timer4.Start();
+        }
+
+        private void pictureBox9_MouseLeave(object sender, EventArgs e)
+        {
+            ochki3 = ochki3 - och;
+            textBox4.Text = Convert.ToString(ochki3);
+            timer4.Start();
         }
     }
 }

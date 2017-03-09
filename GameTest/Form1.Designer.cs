@@ -122,6 +122,19 @@
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.button37 = new System.Windows.Forms.Button();
             this.button38 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.button39 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -142,6 +155,12 @@
             this.tableLayoutPanel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -160,7 +179,7 @@
             this.button1.MinimumSize = new System.Drawing.Size(450, 60);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button1.Size = new System.Drawing.Size(474, 60);
+            this.button1.Size = new System.Drawing.Size(450, 60);
             this.button1.TabIndex = 0;
             this.button1.Text = "Викторина";
             this.button1.UseVisualStyleBackColor = false;
@@ -174,7 +193,7 @@
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::GameTest.Properties.Resources._111;
             this.pictureBox2.InitialImage = global::GameTest.Properties.Resources._111;
-            this.pictureBox2.Location = new System.Drawing.Point(949, 678);
+            this.pictureBox2.Location = new System.Drawing.Point(949, 677);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(42, 42);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -191,7 +210,7 @@
             this.pictureBox1.Image = global::GameTest.Properties.Resources._222;
             this.pictureBox1.ImageLocation = "";
             this.pictureBox1.InitialImage = global::GameTest.Properties.Resources._222;
-            this.pictureBox1.Location = new System.Drawing.Point(894, 678);
+            this.pictureBox1.Location = new System.Drawing.Point(894, 677);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(40, 40);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -214,7 +233,7 @@
             this.button2.MaximumSize = new System.Drawing.Size(500, 0);
             this.button2.MinimumSize = new System.Drawing.Size(450, 60);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(474, 60);
+            this.button2.Size = new System.Drawing.Size(450, 60);
             this.button2.TabIndex = 6;
             this.button2.Text = "Тест";
             this.button2.UseVisualStyleBackColor = false;
@@ -235,7 +254,7 @@
             this.button3.MaximumSize = new System.Drawing.Size(500, 0);
             this.button3.MinimumSize = new System.Drawing.Size(450, 60);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(474, 60);
+            this.button3.Size = new System.Drawing.Size(450, 60);
             this.button3.TabIndex = 7;
             this.button3.Text = "Правила";
             this.button3.UseVisualStyleBackColor = false;
@@ -256,7 +275,7 @@
             this.button4.MaximumSize = new System.Drawing.Size(500, 0);
             this.button4.MinimumSize = new System.Drawing.Size(450, 60);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(474, 60);
+            this.button4.Size = new System.Drawing.Size(450, 60);
             this.button4.TabIndex = 8;
             this.button4.Text = "Изменить";
             this.button4.UseVisualStyleBackColor = false;
@@ -274,7 +293,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.267716F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 91.73228F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 231F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 83F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 86F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Controls.Add(this.checkBox1, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.comboBox1, 1, 2);
@@ -283,7 +302,7 @@
             this.tableLayoutPanel1.Controls.Add(this.trackBar1, 2, 3);
             this.tableLayoutPanel1.Controls.Add(this.checkBox3, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.randAudio, 3, 3);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(921, 12);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(1101, 12);
             this.tableLayoutPanel1.MaximumSize = new System.Drawing.Size(800, 422);
             this.tableLayoutPanel1.MinimumSize = new System.Drawing.Size(800, 422);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -307,7 +326,7 @@
             this.checkBox1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.checkBox1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.checkBox1.ForeColor = System.Drawing.Color.White;
-            this.checkBox1.Location = new System.Drawing.Point(43, 39);
+            this.checkBox1.Location = new System.Drawing.Point(42, 39);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(141, 25);
             this.checkBox1.TabIndex = 1;
@@ -326,7 +345,7 @@
             "1024x768",
             "1280x968",
             "1920x1000"});
-            this.comboBox1.Location = new System.Drawing.Point(43, 74);
+            this.comboBox1.Location = new System.Drawing.Point(42, 74);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(150, 28);
             this.comboBox1.TabIndex = 0;
@@ -341,7 +360,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(337, 0);
+            this.label7.Location = new System.Drawing.Point(334, 0);
             this.label7.Margin = new System.Windows.Forms.Padding(3, 0, 20, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(128, 25);
@@ -356,7 +375,7 @@
             this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.checkBox2.ForeColor = System.Drawing.Color.White;
-            this.checkBox2.Location = new System.Drawing.Point(488, 39);
+            this.checkBox2.Location = new System.Drawing.Point(485, 39);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(88, 25);
             this.checkBox2.TabIndex = 2;
@@ -368,7 +387,7 @@
             // 
             this.trackBar1.AutoSize = false;
             this.trackBar1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.trackBar1.Location = new System.Drawing.Point(488, 112);
+            this.trackBar1.Location = new System.Drawing.Point(485, 112);
             this.trackBar1.Margin = new System.Windows.Forms.Padding(3, 7, 10, 10);
             this.trackBar1.Maximum = 50;
             this.trackBar1.Name = "trackBar1";
@@ -387,7 +406,7 @@
             this.checkBox3.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.checkBox3.ForeColor = System.Drawing.Color.White;
-            this.checkBox3.Location = new System.Drawing.Point(488, 74);
+            this.checkBox3.Location = new System.Drawing.Point(485, 74);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(73, 25);
             this.checkBox3.TabIndex = 3;
@@ -402,7 +421,7 @@
             this.randAudio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.randAudio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.randAudio.ForeColor = System.Drawing.Color.White;
-            this.randAudio.Location = new System.Drawing.Point(719, 108);
+            this.randAudio.Location = new System.Drawing.Point(716, 108);
             this.randAudio.Name = "randAudio";
             this.randAudio.Size = new System.Drawing.Size(70, 27);
             this.randAudio.TabIndex = 6;
@@ -424,7 +443,7 @@
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel5);
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel6);
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel7);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(810, 202);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(1272, 456);
             this.flowLayoutPanel1.MaximumSize = new System.Drawing.Size(375, 415);
             this.flowLayoutPanel1.MinimumSize = new System.Drawing.Size(375, 415);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -787,7 +806,7 @@
             this.tableLayoutPanel8.Controls.Add(this.button32, 2, 4);
             this.tableLayoutPanel8.Controls.Add(this.label13, 0, 4);
             this.tableLayoutPanel8.Controls.Add(this.label12, 0, 3);
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(93, 618);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(77, 654);
             this.tableLayoutPanel8.MinimumSize = new System.Drawing.Size(740, 390);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 5;
@@ -1391,7 +1410,7 @@
             this.pictureBox3.Image = global::GameTest.Properties.Resources._222;
             this.pictureBox3.ImageLocation = "";
             this.pictureBox3.InitialImage = global::GameTest.Properties.Resources._222;
-            this.pictureBox3.Location = new System.Drawing.Point(894, 678);
+            this.pictureBox3.Location = new System.Drawing.Point(894, 677);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(40, 40);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1409,7 +1428,7 @@
             this.pictureBox4.Image = global::GameTest.Properties.Resources._333;
             this.pictureBox4.ImageLocation = "";
             this.pictureBox4.InitialImage = global::GameTest.Properties.Resources._333;
-            this.pictureBox4.Location = new System.Drawing.Point(839, 678);
+            this.pictureBox4.Location = new System.Drawing.Point(839, 677);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(40, 40);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1433,9 +1452,9 @@
             this.tableLayoutPanel9.ColumnCount = 3;
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.240059F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 96.75994F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 38F));
             this.tableLayoutPanel9.Controls.Add(this.label16, 1, 1);
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(940, 637);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(1186, 525);
             this.tableLayoutPanel9.MinimumSize = new System.Drawing.Size(740, 390);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 3;
@@ -1459,7 +1478,7 @@
             this.label16.Location = new System.Drawing.Point(82, 41);
             this.label16.Margin = new System.Windows.Forms.Padding(60, 20, 50, 60);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(572, 264);
+            this.label16.Size = new System.Drawing.Size(569, 264);
             this.label16.TabIndex = 0;
             this.label16.Text = "text";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1501,7 +1520,7 @@
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.5F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 86.5F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 363F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 54F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel10.Controls.Add(this.label17, 0, 0);
             this.tableLayoutPanel10.Controls.Add(this.label18, 3, 0);
@@ -1515,7 +1534,7 @@
             this.tableLayoutPanel10.Controls.Add(this.comboBox4, 1, 5);
             this.tableLayoutPanel10.Controls.Add(this.button37, 2, 4);
             this.tableLayoutPanel10.Controls.Add(this.button38, 2, 5);
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(105, 100);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(1395, 449);
             this.tableLayoutPanel10.MaximumSize = new System.Drawing.Size(800, 422);
             this.tableLayoutPanel10.MinimumSize = new System.Drawing.Size(800, 422);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
@@ -1556,10 +1575,10 @@
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(750, 5);
+            this.label18.Location = new System.Drawing.Point(747, 5);
             this.label18.Margin = new System.Windows.Forms.Padding(5);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(45, 23);
+            this.label18.Size = new System.Drawing.Size(48, 23);
             this.label18.TabIndex = 22;
             this.label18.Text = "1";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1569,7 +1588,7 @@
             this.textBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox1.Location = new System.Drawing.Point(54, 59);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(325, 26);
+            this.textBox1.Size = new System.Drawing.Size(322, 26);
             this.textBox1.TabIndex = 24;
             this.textBox1.Text = "Название викторины";
             // 
@@ -1581,7 +1600,7 @@
             this.button36.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button36.ForeColor = System.Drawing.Color.White;
-            this.button36.Location = new System.Drawing.Point(385, 106);
+            this.button36.Location = new System.Drawing.Point(382, 106);
             this.button36.Margin = new System.Windows.Forms.Padding(3, 3, 3, 5);
             this.button36.Name = "button36";
             this.button36.Size = new System.Drawing.Size(70, 27);
@@ -1596,7 +1615,7 @@
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(387, 5);
+            this.label19.Location = new System.Drawing.Point(384, 5);
             this.label19.Margin = new System.Windows.Forms.Padding(5);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(0, 23);
@@ -1613,7 +1632,7 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(198, 27);
             this.comboBox2.TabIndex = 25;
-            this.comboBox2.Text = "Категории 1";
+            this.comboBox2.Text = "Категории";
             // 
             // comboBox3
             // 
@@ -1625,7 +1644,7 @@
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(198, 27);
             this.comboBox3.TabIndex = 27;
-            this.comboBox3.Text = "Категории 2";
+            this.comboBox3.Text = "Категории";
             // 
             // pictureBox5
             // 
@@ -1670,7 +1689,7 @@
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(198, 27);
             this.comboBox4.TabIndex = 28;
-            this.comboBox4.Text = "Категории 3";
+            this.comboBox4.Text = "Категории";
             // 
             // button37
             // 
@@ -1680,7 +1699,7 @@
             this.button37.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button37.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button37.ForeColor = System.Drawing.Color.White;
-            this.button37.Location = new System.Drawing.Point(385, 149);
+            this.button37.Location = new System.Drawing.Point(382, 149);
             this.button37.Margin = new System.Windows.Forms.Padding(3, 3, 3, 5);
             this.button37.Name = "button37";
             this.button37.Size = new System.Drawing.Size(70, 27);
@@ -1697,7 +1716,7 @@
             this.button38.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button38.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button38.ForeColor = System.Drawing.Color.White;
-            this.button38.Location = new System.Drawing.Point(385, 191);
+            this.button38.Location = new System.Drawing.Point(382, 191);
             this.button38.Margin = new System.Windows.Forms.Padding(3, 3, 3, 5);
             this.button38.Name = "button38";
             this.button38.Size = new System.Drawing.Size(70, 27);
@@ -1706,6 +1725,172 @@
             this.button38.UseVisualStyleBackColor = false;
             this.button38.Click += new System.EventHandler(this.button38_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.label20);
+            this.groupBox1.Controls.Add(this.pictureBox7);
+            this.groupBox1.Location = new System.Drawing.Point(150, 490);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(185, 227);
+            this.groupBox1.TabIndex = 22;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Visible = false;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox2.Location = new System.Drawing.Point(21, 189);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(137, 29);
+            this.textBox2.TabIndex = 2;
+            this.textBox2.Text = "0";
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label20
+            // 
+            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label20.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(6, 164);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(173, 22);
+            this.label20.TabIndex = 1;
+            this.label20.Text = "Игрок 1";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackgroundImage = global::GameTest.Properties.Resources._444;
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox7.InitialImage = null;
+            this.pictureBox7.Location = new System.Drawing.Point(6, 10);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(173, 151);
+            this.pictureBox7.TabIndex = 0;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
+            this.pictureBox7.MouseLeave += new System.EventHandler(this.pictureBox7_MouseLeave);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.label21);
+            this.groupBox2.Controls.Add(this.pictureBox8);
+            this.groupBox2.Location = new System.Drawing.Point(375, 490);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(185, 227);
+            this.groupBox2.TabIndex = 23;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Visible = false;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox3.Location = new System.Drawing.Point(21, 189);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(137, 29);
+            this.textBox3.TabIndex = 2;
+            this.textBox3.Text = "0";
+            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label21
+            // 
+            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label21.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label21.ForeColor = System.Drawing.Color.White;
+            this.label21.Location = new System.Drawing.Point(6, 164);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(173, 22);
+            this.label21.TabIndex = 1;
+            this.label21.Text = "Игрок 2";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackgroundImage = global::GameTest.Properties.Resources._444;
+            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox8.InitialImage = null;
+            this.pictureBox8.Location = new System.Drawing.Point(6, 10);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(173, 151);
+            this.pictureBox8.TabIndex = 0;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
+            this.pictureBox8.MouseLeave += new System.EventHandler(this.pictureBox8_MouseLeave);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.Controls.Add(this.textBox4);
+            this.groupBox3.Controls.Add(this.label22);
+            this.groupBox3.Controls.Add(this.pictureBox9);
+            this.groupBox3.Location = new System.Drawing.Point(600, 490);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(185, 227);
+            this.groupBox3.TabIndex = 23;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Visible = false;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox4.Location = new System.Drawing.Point(21, 189);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(137, 29);
+            this.textBox4.TabIndex = 2;
+            this.textBox4.Text = "0";
+            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label22
+            // 
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label22.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label22.ForeColor = System.Drawing.Color.White;
+            this.label22.Location = new System.Drawing.Point(6, 164);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(173, 22);
+            this.label22.TabIndex = 1;
+            this.label22.Text = "Игрок 3";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackgroundImage = global::GameTest.Properties.Resources._444;
+            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox9.InitialImage = null;
+            this.pictureBox9.Location = new System.Drawing.Point(6, 10);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(173, 151);
+            this.pictureBox9.TabIndex = 0;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
+            this.pictureBox9.MouseLeave += new System.EventHandler(this.pictureBox9_MouseLeave);
+            // 
+            // button39
+            // 
+            this.button39.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button39.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button39.BackgroundImage = global::GameTest.Properties.Resources.kn;
+            this.button39.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button39.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button39.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button39.Font = new System.Drawing.Font("Times New Roman", 22F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(200)));
+            this.button39.ForeColor = System.Drawing.SystemColors.Control;
+            this.button39.Location = new System.Drawing.Point(817, 603);
+            this.button39.MaximumSize = new System.Drawing.Size(180, 50);
+            this.button39.MinimumSize = new System.Drawing.Size(180, 50);
+            this.button39.Name = "button39";
+            this.button39.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button39.Size = new System.Drawing.Size(180, 50);
+            this.button39.TabIndex = 24;
+            this.button39.Text = "Старт";
+            this.button39.UseVisualStyleBackColor = false;
+            this.button39.Visible = false;
+            this.button39.Click += new System.EventHandler(this.button39_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -1713,8 +1898,11 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = global::GameTest.Properties.Resources.ph;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1008, 730);
-            this.Controls.Add(this.tableLayoutPanel10);
+            this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.button39);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.pictureBox4);
@@ -1722,6 +1910,7 @@
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label9);
+            this.Controls.Add(this.tableLayoutPanel10);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.axWindowsMediaPlayer2);
             this.Controls.Add(this.axWindowsMediaPlayer1);
@@ -1773,6 +1962,15 @@
             this.tableLayoutPanel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1871,6 +2069,19 @@
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.Button button37;
         private System.Windows.Forms.Button button38;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.Button button39;
     }
 }
 

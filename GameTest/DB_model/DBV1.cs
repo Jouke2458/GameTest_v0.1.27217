@@ -27,7 +27,7 @@ namespace GameTest.DB_model
         public DateTime datar { get; set; }
     }
     
-    public class Context
+    public class Helper
     {
         List<DBV1> DBv1 = new List<DBV1>();
         List<DBK1> DBk1 = new List<DBK1>();
