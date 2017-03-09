@@ -26,33 +26,33 @@ namespace GameTest.DB_model
         public DateTime datas { get; set; }
         public DateTime datar { get; set; }
     }
-    
+   
+
     public class Helper
     {
-        List<DBV1> DBv1 = new List<DBV1>();
-        List<DBK1> DBk1 = new List<DBK1>();
-        
-        public List<DBV1> GetAllEllementsDBv1(int tn)
+        /*List<DBV1> DBv1 = new List<DBV1>();
+    List<DBK1> DBk1 = new List<DBK1>();
+   //строгое типизирование данных
+    public List<DBV1> GetAllEllementsDBv1(int tn)
+    {
+        SqlConnection sqlCon = new SqlConnection(Settings.Default.ConectDb);
+        sqlCon.Open();
+        SqlDataReader sqlRe = null;
+        SqlCommand command = new SqlCommand("SELECT * FROM [GTV" + tn +"]", sqlCon);
+        sqlRe = command.ExecuteReader();
+        sqlRe.Read();
+        foreach (DbDataRecord s in sqlRe)
         {
-            SqlConnection sqlCon = new SqlConnection(Settings.Default.ConectDb);
-            sqlCon.Open();
-            SqlDataReader sqlRe = null;
-            SqlCommand command = new SqlCommand("SELECT * FROM [GTV" + tn +"]", sqlCon);
-            sqlRe = command.ExecuteReader();
-            sqlRe.Read();
-            foreach (DbDataRecord s in sqlRe)
+            DBv1.Add(new DBV1()
             {
-                DBv1.Add(new DBV1()
-                {
-                    id = s.GetInt32(0),
-                    id_kat = s.GetInt32(1),
-                    tekst = s.GetString(2),
-                    otvet = s.GetString(3),
-                });
-            }
-            return DBv1;
+                id = s.GetInt32(0),
+                id_kat = s.GetInt32(1),
+                tekst = s.GetString(2),
+                otvet = s.GetString(3),
+            });
         }
-        
+        return DBv1;
+    }*/
         public static string Vops(int vop, int tn)
         {
             var sqlCon = new SqlConnection(Settings.Default.ConectDb);

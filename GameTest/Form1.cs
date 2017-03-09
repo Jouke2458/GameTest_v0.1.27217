@@ -13,6 +13,8 @@ using System.Data.SqlClient;
 using System.Data.SqlTypes;
 using GameTest.Properties;
 using GameTest.DB_model;
+using System.Threading;
+
 namespace GameTest
 {
     
@@ -71,12 +73,15 @@ namespace GameTest
                     tableLayoutPanel8.Location = new Point(150, 80);
                     flowLayoutPanel1.Location = new Point(750, 70);
                     tableLayoutPanel1.Location = new Point(120, 100);
-                    label14.Location = new Point(290, 50);
-                    label15.Location = new Point(320, 130);
+                    //label14.Location = new Point(290, 50);
+                    //label15.Location = new Point(320, 130);
                     tableLayoutPanel9.Location = new Point(150, 80);
                     progressBar1.Location = new Point(325, progressBar1.Location.Y);
+                    groupBox1.Location = new Point(150, 490);
+                    groupBox2.Location = new Point(375, 490);
+                    groupBox3.Location = new Point(600, 490);
 
-                
+
             }
             if (comboBox1.Text == "1280x968")
             {
@@ -92,11 +97,13 @@ namespace GameTest
                 tableLayoutPanel8.Size = new Size(900, 500);
                 tableLayoutPanel9.Size = new Size(900, 500);
                 label9.Location = new Point(520, 350);
-                label14.Location = new Point(430, 150);
-                label15.Location = new Point(450, 280);
+                //label14.Location = new Point(430, 150);
+                //label15.Location = new Point(450, 280);
                 tableLayoutPanel9.Location = new Point(225, 100);
                 progressBar1.Location = new Point(450, progressBar1.Location.Y);
-
+                groupBox1.Location = new Point(220, 690);
+                groupBox2.Location = new Point(470, 690);
+                groupBox3.Location = new Point(720, 690);
             }
            
             
@@ -114,8 +121,8 @@ namespace GameTest
                 tableLayoutPanel8.Size = new Size(900, 500);
                 tableLayoutPanel9.Size = new Size(900, 500);
                 label9.Location = new Point(520, 350);
-                label14.Location = new Point(430, 150);
-                label15.Location = new Point(450, 280);
+                //label14.Location = new Point(430, 150);
+                //label15.Location = new Point(450, 280);
                 tableLayoutPanel9.Location = new Point(225, 100);
                 progressBar1.Location = new Point(450, progressBar1.Location.Y);
             }
@@ -139,8 +146,8 @@ namespace GameTest
                 tableLayoutPanel8.Size = new Size(900, 500);
                 tableLayoutPanel9.Size = new Size(900, 500);
                 label9.Location = new Point(520,350);
-                label14.Location = new Point(430, 150);
-                label15.Location = new Point(450, 280);
+                //label14.Location = new Point(430, 150);
+                //label15.Location = new Point(450, 280);
                 tableLayoutPanel9.Location = new Point(225, 100);
                 progressBar1.Location = new Point(450, progressBar1.Location.Y);
                 groupBox1.Location = new Point(200, 700);
@@ -160,8 +167,8 @@ namespace GameTest
                 tableLayoutPanel8.Location = new Point(150, 80);
                 flowLayoutPanel1.Location = new Point(750, 70);
                 tableLayoutPanel1.Location = new Point(120, 100);
-                label14.Location = new Point(290, 50);
-                label15.Location = new Point(320, 130);
+                //label14.Location = new Point(290, 50);
+                //label15.Location = new Point(320, 130);
                 tableLayoutPanel9.Location = new Point(150, 80);
                 progressBar1.Location = new Point(325, progressBar1.Location.Y);
                 groupBox1.Location = new Point(150, 490);
@@ -207,8 +214,6 @@ namespace GameTest
                 pictureBox1.Enabled = true;
             }
             t++;
-           
-            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -339,8 +344,8 @@ namespace GameTest
             tableLayoutPanel8.Location = new Point(150, 80);
             flowLayoutPanel1.Location = new Point(750, 70);
             tableLayoutPanel1.Location = new Point(120, 100);
-            label14.Location = new Point(290, 50);
-            label15.Location = new Point(320, 130);
+            //label14.Location = new Point(290, 50);
+            label15.Location = new Point(130, 130);
             tableLayoutPanel9.Location = new Point(150, 80);
             axWindowsMediaPlayer2.settings.volume = trackBar1.Value - 3;
             button1.Location = new Point(300, 100);
@@ -348,6 +353,9 @@ namespace GameTest
             button3.Location = new Point(300, 270);
             button4.Location = new Point(300, 355);
             tableLayoutPanel10.Location = new Point(150, 100);
+            groupBox1.Location = new Point(150, 490);
+            groupBox2.Location = new Point(375, 490);
+            groupBox3.Location = new Point(600, 490);
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
@@ -400,7 +408,7 @@ namespace GameTest
                 SqlCommand command1 = new SqlCommand("SELECT * FROM [GTK"+ tn +"]", sqlCon);
                         sqlRe1 = command1.ExecuteReader();
                         sqlRe1.Read();
-                    label15.Text = label15.Text + Convert.ToString(sqlRe1["name_kat"]) + "\n";
+                    label15.Text = "Темы раунда:\n" + Convert.ToString(sqlRe1["name_kat"]) + "\n";
                     label8.Text = Convert.ToString(sqlRe1["name_kat"]);
                 for (int x = 1; x < 5; x++)
                 {
@@ -445,7 +453,7 @@ namespace GameTest
                 SqlCommand command1 = new SqlCommand("SELECT * FROM [GTK" + tn + "]", sqlCon);
                 sqlRe1 = command1.ExecuteReader();
                 sqlRe1.Read();
-                label15.Text = label15.Text + Convert.ToString(sqlRe1["name_kat"]) + "\n";
+                label15.Text = "Темы раунда:\n" + Convert.ToString(sqlRe1["name_kat"]) + "\n";
                 label8.Text = Convert.ToString(sqlRe1["name_kat"]);
                 for (int x = 1; x < 5; x++)
                 {
@@ -510,7 +518,7 @@ namespace GameTest
                 SqlCommand command1 = new SqlCommand("SELECT * FROM [GTK" + tn + "]", sqlCon);
                 sqlRe1 = command1.ExecuteReader();
                 sqlRe1.Read();
-                label15.Text = label15.Text + Convert.ToString(sqlRe1["name_kat"]) + "\n";
+                label15.Text = "Темы раунда:\n" + Convert.ToString(sqlRe1["name_kat"]) + "\n";
                 label8.Text = Convert.ToString(sqlRe1["name_kat"]);
                 for (int x = 1; x < 5; x++)
                 {
@@ -620,11 +628,10 @@ namespace GameTest
             t = 1;
             b1 = 1;
         }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             label9.Visible = false;
-            label14.Visible = true;
+            //label14.Visible = true;
             label15.Visible = true;
             timer2.Start();
             timer1.Stop();
@@ -632,7 +639,7 @@ namespace GameTest
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-            label14.Visible = false;
+            //label14.Visible = false;
             label15.Visible = false;
             tableLayoutPanel8.Visible = true;
             pictureBox4.Visible = true;
@@ -731,21 +738,31 @@ namespace GameTest
         }
         int vop = 0;
         public int och = 0;
+        public int tyr = 0;
+        public int raun = 1;
         private void button11_Click(object sender, EventArgs e)
         {
-            vop = 1;
+            if (raun == 1)
+            {vop = 1; och = 1; }
+            if (raun == 2)
+            {vop = 26; och = 1; }
+            if (raun == 3)
+            {vop = 51; och = 1; }
             progressBar1.Value = 0;
             label16.Text = Helper.Vops(vop,tn);
             tableLayoutPanel8.Visible = false;
             tableLayoutPanel9.Visible = true;
-            timer4.Start();
             button11.Visible = false;
             progressBar1.Visible = true;
-            och = 1;
+            tyr++;
         }
         
         private void timer4_Tick(object sender, EventArgs e)
         {
+            if(tyr == 25)
+            {
+                raun++;
+            }
             if (progressBar1.Value < progressBar1.Maximum)
                     progressBar1.Value += 1;
                 else
@@ -756,24 +773,46 @@ namespace GameTest
                 timer5.Start();
                 progressBar1.Value = 0;
                 progressBar1.Visible = false;
+                pictureBox7.Enabled = true;
+                pictureBox8.Enabled = true;
+                pictureBox9.Enabled = true;
                 }
         }
 
         private void timer5_Tick(object sender, EventArgs e)
         {
-            tableLayoutPanel8.Visible = true;
-            tableLayoutPanel9.Visible = false;
-            timer5.Stop();
+            if (tyr < 25)
+            {
+                tableLayoutPanel8.Visible = true;
+                tableLayoutPanel9.Visible = false;
+                timer5.Stop();
+            }
+            if (raun == 2)
+            {
+                label9.Visible = true;
+                label9.Text = "Раунд 2";
+                timer1.Start();
+            }
+            if (raun == 3)
+            {
+                label9.Visible = true;
+                label9.Text = "Раунд 3";
+                timer1.Start();
+            }
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-            vop = 2;
+            if (raun == 1)
+            { vop = 2; och = 2; }
+            if (raun == 2)
+            { vop = 27; och = 2; }
+            if (raun == 3)
+            { vop = 52; och = 2; }
             progressBar1.Value = 0;
             label16.Text = Helper.Vops(vop,tn);
             tableLayoutPanel8.Visible = false;
             tableLayoutPanel9.Visible = true;
-            timer4.Start();
             button12.Visible = false;
             progressBar1.Visible = true;
             och = 2;
@@ -781,12 +820,16 @@ namespace GameTest
 
         private void button13_Click(object sender, EventArgs e)
         {
-            vop = 3;
+            if (raun == 1)
+            { vop = 3; och = 3; }
+            if (raun == 2)
+            { vop = 28; och = 3; }
+            if (raun == 3)
+            { vop = 53; och = 3; }
             progressBar1.Value = 0;
             label16.Text = Helper.Vops(vop,tn);
             tableLayoutPanel8.Visible = false;
             tableLayoutPanel9.Visible = true;
-            timer4.Start();
             button13.Visible = false;
             progressBar1.Visible = true;
             och = 3;
@@ -794,12 +837,16 @@ namespace GameTest
 
         private void button14_Click(object sender, EventArgs e)
         {
-            vop = 4;
+            if (raun == 1)
+            { vop = 4; och = 4; }
+            if (raun == 2)
+            { vop = 29; och = 4; }
+            if (raun == 3)
+            { vop = 54; och = 4; }
             progressBar1.Value = 0;
             label16.Text = Helper.Vops(vop,tn);
             tableLayoutPanel8.Visible = false;
             tableLayoutPanel9.Visible = true;
-            timer4.Start();
             button14.Visible = false;
             progressBar1.Visible = true;
             och = 4;
@@ -807,19 +854,23 @@ namespace GameTest
 
         private void button15_Click(object sender, EventArgs e)
         {
-            vop = 5;
+            if (raun == 1)
+            { vop = 5; och = 5; }
+            if (raun == 2)
+            { vop = 30; och = 5; }
+            if (raun == 3)
+            { vop = 55; och = 5; }
             progressBar1.Value = 0;
             label16.Text = Helper.Vops(vop,tn);
             tableLayoutPanel8.Visible = false;
             tableLayoutPanel9.Visible = true;
-            timer4.Start();
             button15.Visible = false;
             progressBar1.Visible = true;
             och = 5;
         }
         
         
-       static public bool Tru = true;
+       static public bool Tru = false;
         private void tableLayoutPanel9_Click(object sender, EventArgs e)
         {
             int resultTime = progressBar1.Value;
@@ -835,6 +886,20 @@ namespace GameTest
             }
         }
 
+        private void label16_Click(object sender, EventArgs e)
+        {
+            int resultTime = progressBar1.Value;
+            if (Tru)
+            {
+                timer4.Stop();
+                Tru = false;
+            }
+            else
+            {
+                timer4.Start();
+                Tru = true;
+            }
+        }
         private void randAudio_Click(object sender, EventArgs e)
         {
             axWindowsMediaPlayer2.URL = "1\\kn.mp3";
@@ -949,58 +1014,68 @@ namespace GameTest
         public int ochki1 = 0;
         public int ochki2 = 0;
         public int ochki3 = 0;
-        private void pictureBox7_Click(object sender, EventArgs e)
+        
+        private void pictureBox8_Click(object sender, EventArgs e)
         {
-            if (progressBar1.Value > 0)
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void pictureBox7_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (progressBar1.Value > 0 && e.Button == MouseButtons.Left)
+                {
+                    ochki1 = ochki1 + och;
+                    textBox2.Text = Convert.ToString(ochki1);
+                    progressBar1.Value = progressBar1.Maximum;
+                    timer4.Start();
+                }
+            if (progressBar1.Value > 0 && e.Button == MouseButtons.Right)
             {
-                ochki1 = ochki1 + och;
+                ochki1 = ochki1 - och;
                 textBox2.Text = Convert.ToString(ochki1);
-                progressBar1.Value = progressBar1.Maximum;
                 timer4.Start();
+                pictureBox7.Enabled = false;
             }
         }
 
-        private void pictureBox8_Click(object sender, EventArgs e)
+        private void pictureBox8_MouseDown(object sender, MouseEventArgs e)
         {
-            if (progressBar1.Value > 0)
+            if (progressBar1.Value > 0 && e.Button == MouseButtons.Left)
             {
                 ochki2 = ochki2 + och;
                 textBox3.Text = Convert.ToString(ochki2);
                 progressBar1.Value = progressBar1.Maximum;
                 timer4.Start();
             }
+            if (progressBar1.Value > 0 && e.Button == MouseButtons.Right)
+            {
+                ochki2 = ochki2 - och;
+                textBox3.Text = Convert.ToString(ochki2);
+                timer4.Start();
+                pictureBox8.Enabled = false;
+            }
         }
 
-        private void pictureBox9_Click(object sender, EventArgs e)
+        private void pictureBox9_MouseDown(object sender, MouseEventArgs e)
         {
-            if (progressBar1.Value > 0)
+            if (progressBar1.Value > 0 && e.Button == MouseButtons.Left)
             {
                 ochki3 = ochki3 + och;
                 textBox4.Text = Convert.ToString(ochki3);
                 progressBar1.Value = progressBar1.Maximum;
                 timer4.Start();
             }
+            if (progressBar1.Value > 0 && e.Button == MouseButtons.Right)
+            {
+                ochki3 = ochki3 - och;
+                textBox4.Text = Convert.ToString(ochki3);
+                timer4.Start();
+                pictureBox9.Enabled = false;
+            }
         }
 
-        private void pictureBox7_MouseLeave(object sender, EventArgs e)
-        {
-            ochki1 = ochki1 - och;
-            textBox2.Text = Convert.ToString(ochki1);
-            timer4.Start();
-        }
-
-        private void pictureBox8_MouseLeave(object sender, EventArgs e)
-        {
-            ochki2 = ochki2 - och;
-            textBox3.Text = Convert.ToString(ochki2);
-            timer4.Start();
-        }
-
-        private void pictureBox9_MouseLeave(object sender, EventArgs e)
-        {
-            ochki3 = ochki3 - och;
-            textBox4.Text = Convert.ToString(ochki3);
-            timer4.Start();
-        }
     }
 }
